@@ -28,6 +28,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 - **Secure Email Storage:** Only email addresses stored in Supabase database
 - **AI Processing:** Google Gemini AI for temporary image analysis
 - **Email Notifications:** Account verification and updates via Resend
+- **Subscription Management:** RevenueCat for payment processing and subscription handling
 - **Cross-Platform Compatibility:** Available on iOS and Android
 
 ## User Eligibility and Account Registration
@@ -137,7 +138,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 
 ### Your Rights
 - You retain complete ownership of images and personal data stored locally
-- You grant us a limited license to process your email for account management
+- You grant us a limited license to process your email and subscription data for account management
 - You may delete your local content and account at any time
 - Your usage rights are limited to personal, non-commercial use
 - You control all locally stored data through device-based management
@@ -152,14 +153,15 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 
 ### Data Collection and Use
 - We collect and process data as described in our Privacy Policy
-- Only email addresses are stored in our Supabase database
+- Email addresses and subscription data are stored in our Supabase database
 - All images and analysis data are stored locally on your device
 - AI analysis is performed by Google Gemini AI with privacy protections
 - Email communications are handled by Resend service
+- Subscription management is handled by RevenueCat
 
 ### User Control
 - You control your privacy settings and email preferences
-- You can delete your account and email from our database at any time
+- You can delete your account and data from our database at any time
 - You have complete control over locally stored images and data
 - You can opt out of comparison features and social sharing
 - Local data can be cleared through app settings
@@ -171,34 +173,52 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 - **Permanent Deletion:** Uninstalling the app permanently deletes all local data
 
 ### Third-Party Services
+- **RevenueCat:** Subscription management and payment processing
+- **Apple App Store/Google Play Store:** Payment processing and app distribution
 - **Google Gemini AI:** Temporary image processing for analysis only
-- **Supabase:** Email address storage and account management only
+- **Supabase:** Email address and subscription data storage only
 - **Resend:** Email delivery and notification services
 - These services have their own privacy policies and terms
 
 ## Payment Terms and Subscriptions
 
-### Free Service
-- BodyIQ is currently offered as a free service
-- No charges apply for basic app functionality
-- We reserve the right to introduce premium features in the future
+### Subscription Service
+- BodyIQ offers a weekly subscription service for unlimited access to all features
+- Subscription payments are processed through RevenueCat and your device's app store (Apple App Store or Google Play Store)
+- Subscription pricing and terms are displayed in the app before purchase
+- Subscriptions automatically renew unless cancelled before the renewal date
+
+### Free Trial
+- New users receive a free trial with limited scans to test the app functionality
+- Once the free trial scan limit is reached, continued access requires an active subscription
+- Free trial terms and scan limits are displayed in the app
+- Users can subscribe at any time during or after the free trial period
 
 ### Payment Processing
-- Subscription and payment processing is handled by RevenueCat
-- Actual payments are processed through Apple App Store and Google Play Store
-- RefundS and billing disputes follow RevenueCat and app store policies
-- RevenueCat's terms of service apply to all subscription-related matters
-  
-### Future Premium Features
-- We may introduce paid subscriptions or premium features
-- Any charges will be clearly disclosed before implementation
-- Existing users will receive advance notice of any pricing changes
-- Premium features will be optional and clearly distinguished
+- All payments are processed through Apple App Store or Google Play Store payment systems
+- RevenueCat manages subscription status and provides subscription analytics
+- App store payment terms and conditions apply to all transactions
+- Refund requests must be made through your respective app store
 
-### Third-Party Payment Processing
-- If payments are introduced, they will be processed through secure third-party services
-- App Store payment terms (Google Play, Apple App Store) will apply
-- Refund policies will follow applicable app store guidelines
+### Cancellation and Refunds
+- Subscriptions can be cancelled at any time through your device's app store settings
+- Cancellation will take effect at the end of the current billing period
+- Refund policies follow Apple App Store and Google Play Store guidelines
+- Contact your app store directly for refund requests
+
+## User Responsibilities
+
+### Subscription Management
+- Users are responsible for managing their subscriptions through their device's app store
+- Users should monitor their subscription status and renewal dates
+- Free trial usage should be tracked to avoid unexpected subscription charges
+- Users must cancel subscriptions through the appropriate app store if they no longer wish to continue
+
+### Account and Payment Information
+- Provide accurate email address for account and subscription management
+- Maintain the security of your account credentials
+- Ensure your payment method is valid and up to date in your app store account
+- Notify us immediately of any unauthorized access or suspicious subscription activity
 
 ## Disclaimers and Limitations
 
@@ -236,7 +256,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 
 ### Liability Exclusions
 - We are not liable for indirect, incidental, or consequential damages
-- Our liability is limited to the amount paid for the service (currently $0)
+- Our liability is limited to the amount paid for the service
 - We are not responsible for local data loss, device damage, or third-party actions
 - Users assume risk for any decisions based on app analysis results
 - We are not liable for loss of locally stored data due to device issues
@@ -249,10 +269,10 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 
 ### User Termination
 - You may delete your account and stop using the service at any time
-- Account deletion will permanently remove your email from our database within 30 days
+- Account deletion will permanently remove your data from our database within 30 days
 - You can uninstall the app from your device using standard procedures
 - Uninstalling the app will permanently delete all locally stored data
-- Some email data may be retained for legal or safety purposes as described in our Privacy Policy
+- Some data may be retained for legal or safety purposes as described in our Privacy Policy
 
 ### Service Termination by Us
 - We may suspend or terminate accounts for violations of these Terms
@@ -264,7 +284,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 - All user rights and licenses granted in these Terms will end
 - You must cease using the app and may be required to delete it
 - Certain provisions (disclaimers, limitations, etc.) survive termination
-- Email data deletion will proceed according to our Privacy Policy
+- Data deletion will proceed according to our Privacy Policy
 - Local data remains on your device until app is uninstalled
 
 ## Updates and Modifications
@@ -347,4 +367,4 @@ These Terms may only be amended through written updates posted in the app or on 
 - **Device Requirements:** Ensure adequate storage space for optimal performance
 - **Security:** Protect your device to secure your locally stored data
 
-**Effective Date:** January 1, 2025
+**Effective Date:** August 4, 2025
