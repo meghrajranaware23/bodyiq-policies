@@ -25,6 +25,12 @@ We are committed to protecting your privacy and ensuring transparency in our dat
 - AI-generated fitness statistics and body composition estimates
 - Progress tracking data and historical measurements
 
+**Subscription and Usage Data:
+Subscription status and payment history
+Free trial usage and scan count tracking
+Purchase receipts and transaction records
+Subscription preferences and settings
+
 **Comparison Feature Data (Processed Locally):**
 - Friend comparison requests and results
 - Soulmate comparison data and compatibility scores
@@ -135,6 +141,8 @@ In the event of a merger, acquisition, or sale of our business, only your email 
 ### Database-Stored Data (Email Only)
 - **Email addresses:** Retained while account is active plus 30 days after deletion
 - **Account data:** Retained while account is active plus 30 days after deletion
+- Free trial usage data: Retained while account is active plus 30 days after deletion
+- Account data: Retained while account is active plus 30 days after deletion
 
 ### Locally Stored Data
 - **All images and analysis data:** Retained until app is uninstalled or data is manually deleted
