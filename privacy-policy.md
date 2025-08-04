@@ -15,6 +15,12 @@ We are committed to protecting your privacy and ensuring transparency in our dat
 - Age and gender (for personalized analysis)
 - Profile preferences and settings
 
+**Subscription and Usage Data:**
+- Subscription status and payment history
+- Free trial usage and scan count tracking
+- Purchase receipts and transaction records
+- Subscription preferences and settings
+
 **Body Analysis Data (Stored Locally):**
 - Face images and facial feature analysis data
 - Biceps images and muscle tone measurements
@@ -24,12 +30,6 @@ We are committed to protecting your privacy and ensuring transparency in our dat
 - Full body images and overall physique assessments
 - AI-generated fitness statistics and body composition estimates
 - Progress tracking data and historical measurements
-
-**Subscription and Usage Data:
-Subscription status and payment history
-Free trial usage and scan count tracking
-Purchase receipts and transaction records
-Subscription preferences and settings
 
 **Comparison Feature Data (Processed Locally):**
 - Friend comparison requests and results
@@ -73,8 +73,9 @@ Subscription preferences and settings
 - Store comparison results for future reference (in device memory only)
 
 **App Functionality:**
-- Maintain your account and user profile (email only stored in database)
+- Maintain your account and user profile (email and subscription data stored in database)
 - Send email confirmations and notifications (via Resend service)
+- Process subscription management and payments (via RevenueCat)
 - Provide customer support and respond to inquiries
 - Improve app performance and user experience
 
@@ -88,10 +89,11 @@ Subscription preferences and settings
 ## Data Storage and Processing
 
 ### Storage Infrastructure
-- **Primary Database:** Supabase (stores email addresses only)
+- **Primary Database:** Supabase (stores email addresses and subscription data)
 - **Image Storage:** Local device memory via Redux store (no cloud storage)
 - **Email Services:** Resend for email confirmations and notifications
 - **AI Processing:** Google Gemini AI for image analysis (temporary processing only)
+- **Subscription Management:** RevenueCat for payment processing and subscription handling
 
 ### Data Processing Flow
 1. Images uploaded and stored locally in Redux store on your device
@@ -99,7 +101,7 @@ Subscription preferences and settings
 3. AI analysis results stored locally on your device
 4. Original images remain only on your device (not uploaded to any server)
 5. Analysis results displayed in app interface
-6. Only email addresses are stored in our Supabase database
+6. Only email addresses and subscription data are stored in our Supabase database
 
 ### Local Data Storage
 - **All images and analysis data are stored locally on your device**
@@ -108,13 +110,14 @@ Subscription preferences and settings
 - **Uninstalling the app will permanently delete all locally stored data**
 
 ### International Data Transfers
-Only your email address may be transferred to and processed in countries other than your own, including the United States where our service providers operate. We ensure appropriate safeguards are in place to protect your email data during international transfers.
+Only your email address and subscription data may be transferred to and processed in countries other than your own, including the United States where our service providers operate. We ensure appropriate safeguards are in place to protect your data during international transfers.
 
 ## Data Sharing and Disclosure
 
 ### With Service Providers
 We share limited data with trusted third-party service providers:
-- **Supabase:** Email address storage only
+- **Supabase:** Email address and subscription data storage
+- **RevenueCat:** Subscription management and payment processing
 - **Google Gemini AI:** Temporary image analysis processing (images not stored)
 - **Resend:** Email delivery and notification services
 - **App Store Platforms:** Google Play Services and Apple App Store
@@ -134,15 +137,15 @@ We may disclose your information when required by law, including:
 *Note: Since images are stored locally, we cannot access or disclose image data unless required by law and with appropriate legal process.*
 
 ### Business Transfers
-In the event of a merger, acquisition, or sale of our business, only your email information stored in our database may be transferred as part of that transaction.
+In the event of a merger, acquisition, or sale of our business, only your email information and subscription data stored in our database may be transferred as part of that transaction.
 
 ## Data Retention Policy
 
-### Database-Stored Data (Email Only)
+### Database-Stored Data
 - **Email addresses:** Retained while account is active plus 30 days after deletion
+- **Subscription data:** Retained for 7 years for tax and legal compliance
+- **Free trial usage data:** Retained while account is active plus 30 days after deletion
 - **Account data:** Retained while account is active plus 30 days after deletion
-- Free trial usage data: Retained while account is active plus 30 days after deletion
-- Account data: Retained while account is active plus 30 days after deletion
 
 ### Locally Stored Data
 - **All images and analysis data:** Retained until app is uninstalled or data is manually deleted
@@ -158,9 +161,9 @@ In the event of a merger, acquisition, or sale of our business, only your email 
 ## Data Security
 
 ### Technical Safeguards
-- **Database Encryption:** Email data encrypted in transit and at rest
+- **Database Encryption:** Email and subscription data encrypted in transit and at rest
 - **Local Storage Security:** Data encrypted within Redux store on device
-- **Access Controls:** Limited access to email data by authorized personnel only
+- **Access Controls:** Limited access to database data by authorized personnel only
 - **Regular Audits:** Periodic security assessments and updates
 
 ### AI Processing Security
@@ -185,10 +188,10 @@ In the event of a merger, acquisition, or sale of our business, only your email 
 ## Your Privacy Rights
 
 ### Access and Control
-- **View Your Data:** Access email information we have stored
+- **View Your Data:** Access email and subscription information we have stored
 - **Update Information:** Correct or modify your email and account settings
-- **Download Data:** Export your email data in a portable format
-- **Delete Account:** Permanently remove your account and email from our database
+- **Download Data:** Export your email and subscription data in a portable format
+- **Delete Account:** Permanently remove your account and data from our database
 - **Local Data Control:** Manage all images and analysis data through app settings
 
 ### Comparison Controls
@@ -205,7 +208,7 @@ In the event of a merger, acquisition, or sale of our business, only your email 
 
 ### How to Exercise Your Rights
 Contact us at meghraj.ranaware22@vit.edu or use the in-app privacy settings to:
-- Request email data access or deletion
+- Request data access or deletion
 - Update your account information
 - Change privacy preferences
 - Report privacy concerns
@@ -215,14 +218,14 @@ Contact us at meghraj.ranaware22@vit.edu or use the in-app privacy settings to:
 
 ### United States Residents (CCPA)
 California residents have additional rights including:
-- Right to know what personal information is collected (email only in database)
+- Right to know what personal information is collected (email and subscription data in database)
 - Right to delete personal information
 - Right to opt-out of sale of personal information (we don't sell data)
 - Right to non-discrimination for exercising privacy rights
 
 ### European Union/UK Residents (GDPR)
 EU and UK residents have rights including:
-- Right of access to personal data (email data in database)
+- Right of access to personal data (email and subscription data in database)
 - Right to rectification of inaccurate data
 - Right to erasure ("right to be forgotten")
 - Right to restrict processing
@@ -239,17 +242,20 @@ Parents and guardians who believe their child has provided us with personal info
 
 ## Third-Party Services
 
+### RevenueCat
+We use RevenueCat for subscription management and payment processing. RevenueCat processes subscription data according to their privacy policy and security standards.
+
+### Apple App Store / Google Play Store
+Payment processing is handled through Apple App Store and Google Play Store payment systems. These platforms process payment information according to their respective privacy policies.
+
 ### Google Gemini AI
 Our app uses Google Gemini AI for temporary image analysis. Images are processed temporarily and not stored by Google. Google's privacy practices are governed by their own privacy policy.
 
 ### Supabase
-We use Supabase for email data storage and management only. Supabase maintains industry-standard security practices and complies with applicable privacy regulations.
+We use Supabase for email and subscription data storage and management only. Supabase maintains industry-standard security practices and complies with applicable privacy regulations.
 
 ### Resend
 We use Resend for email communications. Resend processes email data according to their privacy policy and security standards.
-
-### RevenueCat
-We use RevenueCat for subscription management and payment processing. RevenueCat processes payment data according to their privacy policy and security standards. Payment processing is handled through Apple App Store and Google Play Store payment systems.
 
 ### Social Media Integration
 When you share content from BodyIQ on social media platforms:
