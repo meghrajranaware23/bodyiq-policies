@@ -65,6 +65,13 @@
             border-left: 4px solid #bee5eb;
             margin: 15px 0;
         }
+        .face-data-section {
+            background: #ffe6e6;
+            padding: 20px;
+            border-left: 4px solid #ff6b6b;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
         .contact-info {
             background: #e8f4fd;
             padding: 20px;
@@ -86,11 +93,77 @@
 <body>
     <div class="container">
         <h1>BodyIQ Privacy Policy</h1>
-        <div class="last-updated">Last Updated: August 4, 2025</div>
+        <div class="last-updated">Last Updated: August 25, 2025</div>
 
         <h2>Introduction</h2>
         <p>Welcome to BodyIQ, a comprehensive fitness and body analysis mobile application. This Privacy Policy explains how Meghraj Ranaware ("we," "us," or "our") collects, uses, protects, and shares your information when you use our BodyIQ mobile application ("App," "Service," or "Application").</p>
         <p>We are committed to protecting your privacy and ensuring transparency in our data practices. By using BodyIQ, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <div class="face-data-section">
+            <h2>Face Data and Body Image Collection - Apple App Store Compliance</h2>
+            
+            <h3>What Face Data and Body Images Does BodyIQ Collect?</h3>
+            <p><strong>Face Data Collected:</strong></p>
+            <ul>
+                <li>Facial images captured through the app's camera functionality</li>
+                <li>Facial feature measurements and proportions for fitness analysis</li>
+                <li>Facial symmetry data for overall health assessment</li>
+                <li>Face-based body fat percentage estimates</li>
+            </ul>
+            
+            <p><strong>Body Images Collected:</strong></p>
+            <ul>
+                <li>Biceps images for muscle tone analysis</li>
+                <li>Back images for posture and muscle symmetry assessment</li>
+                <li>Leg images for muscle development evaluation</li>
+                <li>Abdominal images for core strength analysis</li>
+                <li>Full body images for overall physique assessment</li>
+            </ul>
+
+            <h3>Complete Explanation of All Planned Uses of Face Data and Body Images</h3>
+            <p><strong>Primary Uses:</strong></p>
+            <ul>
+                <li><strong>Fitness Analysis:</strong> Generate personalized fitness scores and body composition estimates</li>
+                <li><strong>Progress Tracking:</strong> Monitor changes in facial features and body measurements over time</li>
+                <li><strong>Health Insights:</strong> Provide recommendations for fitness improvements based on facial and body analysis</li>
+                <li><strong>Comparison Features:</strong> Enable friend-to-friend comparisons and soulmate compatibility assessments (processed locally)</li>
+                <li><strong>Statistical Generation:</strong> Create detailed fitness statistics and body composition reports</li>
+            </ul>
+
+            <h3>Third-Party Sharing and Data Storage Location</h3>
+            <p><strong>IMPORTANT CLARIFICATION: NO IMAGES ARE COLLECTED OR STORED BY BODYIQ SERVERS</strong></p>
+            <ul>
+                <li><strong>Image Storage:</strong> All face data and body images are stored EXCLUSIVELY on the user's local device memory using Redux store</li>
+                <li><strong>Server Storage:</strong> ZERO face data or body images are stored on our servers, databases, or cloud storage</li>
+                <li><strong>Third-Party Sharing:</strong> Face data and body images are temporarily processed by Google Gemini AI for analysis purposes only, then immediately discarded</li>
+                <li><strong>Google Gemini AI:</strong> Images are sent for temporary analysis only - Google does not store or retain these images</li>
+                <li><strong>No Permanent External Storage:</strong> No face data or body images are permanently stored with any third-party service</li>
+            </ul>
+
+            <h3>Data Retention Period for Face Data and Body Images</h3>
+            <ul>
+                <li><strong>Local Device Storage:</strong> Face data and body images remain on the user's device until the app is uninstalled or the user manually deletes the data</li>
+                <li><strong>Server Retention:</strong> ZERO retention period - no face data or body images are stored on our servers</li>
+                <li><strong>AI Processing Retention:</strong> Google Gemini AI processes images temporarily and immediately discards them after analysis (no retention)</li>
+                <li><strong>User Control:</strong> Users have complete control over their face data and can delete all images at any time through the app</li>
+            </ul>
+
+            <h3>Data Collection Summary for Apple Compliance</h3>
+            <p><strong>What We Actually Collect and Store in Our Database:</strong></p>
+            <ul>
+                <li>Email addresses only</li>
+                <li>Subscription status and payment information</li>
+                <li>User account preferences</li>
+            </ul>
+            
+            <p><strong>What We DO NOT Collect or Store:</strong></p>
+            <ul>
+                <li>Face images (stored locally on user device only)</li>
+                <li>Body images (stored locally on user device only)</li>
+                <li>Biometric data (processed locally, not stored on servers)</li>
+                <li>Personal photos (remain on user device only)</li>
+            </ul>
+        </div>
 
         <h2>Information We Collect</h2>
 
@@ -98,7 +171,7 @@
 
         <h4>Account Information:</h4>
         <ul>
-            <li>Email address (for account creation and verification)</li>
+            <li>Email address (for account creation and OTP verification)</li>
             <li>User ID (generated automatically)</li>
             <li>Age and gender (for personalized analysis)</li>
             <li>Profile preferences and settings</li>
@@ -113,7 +186,7 @@
         </ul>
 
         <div class="important">
-            <h4>Body Analysis Data (Stored Locally):</h4>
+            <h4>Body Analysis Data (Stored Locally ONLY):</h4>
             <ul>
                 <li>Face images and facial feature analysis data</li>
                 <li>Biceps images and muscle tone measurements</li>
@@ -124,6 +197,7 @@
                 <li>AI-generated fitness statistics and body composition estimates</li>
                 <li>Progress tracking data and historical measurements</li>
             </ul>
+            <p><strong>CRITICAL NOTE:</strong> All body analysis data including face images are stored exclusively on the user's device and are never uploaded to or stored on our servers.</p>
         </div>
 
         <h4>Comparison Feature Data (Processed Locally):</h4>
@@ -168,7 +242,7 @@
         <h4>App Functionality:</h4>
         <ul>
             <li>Maintain your account and user profile (email and subscription data stored in database)</li>
-            <li>Send email confirmations and notifications (via Resend service)</li>
+            <li>Send email confirmations and OTP verification codes (via Resend service)</li>
             <li>Process subscription management and payments (via RevenueCat)</li>
             <li>Provide customer support and respond to inquiries</li>
             <li>Improve app performance and user experience</li>
@@ -178,20 +252,20 @@
 
         <h3>Storage Infrastructure</h3>
         <ul>
-            <li><strong>Primary Database:</strong> Supabase (stores email addresses and subscription data)</li>
-            <li><strong>Image Storage:</strong> Local device memory via Redux store (no cloud storage)</li>
-            <li><strong>Email Services:</strong> Resend for email confirmations and notifications</li>
-            <li><strong>AI Processing:</strong> Google Gemini AI for image analysis (temporary processing only)</li>
+            <li><strong>Primary Database:</strong> Supabase (stores ONLY email addresses and subscription data)</li>
+            <li><strong>Image Storage:</strong> Local device memory via Redux store (NO cloud storage - all images remain on user's device)</li>
+            <li><strong>Email Services:</strong> Resend for email confirmations and OTP verification</li>
+            <li><strong>AI Processing:</strong> Google Gemini AI for image analysis (temporary processing only - no storage)</li>
             <li><strong>Subscription Management:</strong> RevenueCat for payment processing and subscription handling</li>
         </ul>
 
         <div class="data-flow">
             <h3>Data Processing Flow</h3>
             <ol>
-                <li>Images uploaded and stored locally in Redux store on your device</li>
-                <li>Images temporarily sent to Google Gemini AI for analysis</li>
-                <li>AI analysis results stored locally on your device</li>
-                <li>Original images remain only on your device (not uploaded to any server)</li>
+                <li>Images captured and stored locally in Redux store on your device</li>
+                <li>Images temporarily sent to Google Gemini AI for analysis (not stored by Google)</li>
+                <li>AI analysis results returned and stored locally on your device</li>
+                <li>Original images remain only on your device (never uploaded to any server for storage)</li>
                 <li>Analysis results displayed in app interface</li>
                 <li>Only email addresses and subscription data are stored in our Supabase database</li>
             </ol>
@@ -212,12 +286,13 @@
         <h3>With Service Providers</h3>
         <p>We share limited data with trusted third-party service providers:</p>
         <ul>
-            <li><strong>Supabase:</strong> Email address and subscription data storage</li>
+            <li><strong>Supabase:</strong> Email address and subscription data storage ONLY</li>
             <li><strong>RevenueCat:</strong> Subscription management and payment processing</li>
-            <li><strong>Google Gemini AI:</strong> Temporary image analysis processing (images not stored)</li>
-            <li><strong>Resend:</strong> Email delivery and notification services</li>
+            <li><strong>Google Gemini AI:</strong> Temporary image analysis processing (images not stored by Google)</li>
+            <li><strong>Resend:</strong> Email delivery and OTP verification services</li>
             <li><strong>App Store Platforms:</strong> Google Play Services and Apple App Store</li>
         </ul>
+        <p><strong>IMPORTANT:</strong> No face data or body images are shared with or stored by any service provider. Images are only temporarily processed by Google Gemini AI for analysis purposes.</p>
 
         <h3>Comparison Features</h3>
         <ul>
@@ -234,7 +309,7 @@
             <li>Investigation of fraud or security issues</li>
             <li>Response to government requests or law enforcement</li>
         </ul>
-        <p><em>Note: Since images are stored locally, we cannot access or disclose image data unless required by law and with appropriate legal process.</em></p>
+        <p><em>Note: Since images are stored locally, we cannot access or disclose image data unless required by law and with appropriate legal process directly from the user's device.</em></p>
 
         <h2>Data Retention Policy</h2>
 
@@ -246,11 +321,13 @@
             <li><strong>Account data:</strong> Retained while account is active plus 30 days after deletion</li>
         </ul>
 
-        <h3>Locally Stored Data</h3>
+        <h3>Locally Stored Data (Face Data and Body Images)</h3>
         <ul>
-            <li><strong>All images and analysis data:</strong> Retained until app is uninstalled or data is manually deleted</li>
+            <li><strong>All images and analysis data:</strong> Retained until app is uninstalled or data is manually deleted by user</li>
+            <li><strong>Face data retention:</strong> Stored on device only until user removes the app or clears data</li>
             <li><strong>Progress tracking:</strong> Available as long as app remains installed</li>
             <li><strong>Comparison results:</strong> Stored locally until manually deleted or app uninstalled</li>
+            <li><strong>Zero server retention:</strong> No face data or body images are retained on any servers</li>
         </ul>
 
         <h2>Data Security</h2>
@@ -295,6 +372,7 @@
         <h3>Communication Preferences</h3>
         <ul>
             <li><strong>Email Notifications:</strong> Control what emails you receive</li>
+            <li><strong>OTP Verification:</strong> Manage email-based authentication preferences</li>
             <li><strong>Push Notifications:</strong> Manage app notification settings</li>
             <li><strong>Marketing Communications:</strong> Opt out of promotional messages</li>
             <li><strong>Social Sharing:</strong> Control what data appears in shared content</li>
@@ -333,7 +411,7 @@
             <li><strong>Apple App Store / Google Play Store:</strong> Payment processing</li>
             <li><strong>Google Gemini AI:</strong> Temporary image analysis (images not stored)</li>
             <li><strong>Supabase:</strong> Email and subscription data storage</li>
-            <li><strong>Resend:</strong> Email communications</li>
+            <li><strong>Resend:</strong> Email communications and OTP verification</li>
         </ul>
 
         <h2>Changes to This Privacy Policy</h2>
@@ -370,10 +448,11 @@
             <li>General Data Protection Regulation (GDPR)</li>
             <li>California Consumer Privacy Act (CCPA)</li>
             <li>Children's Online Privacy Protection Act (COPPA)</li>
+            <li>Apple App Store Review Guidelines</li>
             <li>Other applicable privacy laws and regulations</li>
         </ul>
 
-        <p><strong>Effective Date:</strong> August 4, 2025</p>
+        <p><strong>Effective Date:</strong> August 25, 2025</p>
     </div>
 </body>
 </html>
