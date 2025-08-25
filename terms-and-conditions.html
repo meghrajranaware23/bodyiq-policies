@@ -54,6 +54,13 @@
             border-left: 4px solid #ffc107;
             margin: 15px 0;
         }
+        .face-data-section {
+            background: #ffe6e6;
+            padding: 20px;
+            border-left: 4px solid #ff6b6b;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
         .contact-info {
             background: #e8f4fd;
             padding: 20px;
@@ -68,7 +75,7 @@
 <body>
     <div class="container">
         <h1>BodyIQ Terms and Conditions</h1>
-        <div class="last-updated">Last Updated: August 4, 2025</div>
+        <div class="last-updated">Last Updated: August 25, 2025</div>
 
         <h2>Agreement to Terms</h2>
         <p>These Terms and Conditions ("Terms," "Agreement") govern your use of the BodyIQ mobile application ("App," "Service," or "Application") developed by Meghraj Ranaware ("we," "us," "our," or "Service Provider").</p>
@@ -100,7 +107,7 @@
             <li><strong>Local Data Storage:</strong> All images and analysis data stored in device memory via Redux store</li>
             <li><strong>Secure Email Storage:</strong> Only email addresses stored in Supabase database</li>
             <li><strong>AI Processing:</strong> Google Gemini AI for temporary image analysis</li>
-            <li><strong>Email Notifications:</strong> Account verification and updates via Resend</li>
+            <li><strong>Email and OTP Verification:</strong> Account verification and updates via Resend</li>
             <li><strong>Subscription Management:</strong> RevenueCat for payment processing and subscription handling</li>
             <li><strong>Cross-Platform Compatibility:</strong> Available on iOS and Android</li>
         </ul>
@@ -114,13 +121,22 @@
             <li>Users under 18 should use the app under parental supervision</li>
         </ul>
 
+        <h3>Account Registration Process</h3>
+        <ul>
+            <li>Registration requires a valid email address</li>
+            <li>Email verification through OTP (One-Time Password) sent to your email</li>
+            <li>No third-party login services are required</li>
+            <li>Account creation is free and does not require payment information</li>
+        </ul>
+
         <h3>Account Responsibilities</h3>
         <ul>
-            <li>Provide accurate email address for registration</li>
+            <li>Provide accurate email address for registration and OTP verification</li>
             <li>Maintain the security of your account credentials</li>
             <li>Notify us immediately of any unauthorized access</li>
             <li>You are responsible for all activities under your account</li>
             <li>Ensure your device has sufficient storage for local data</li>
+            <li>Keep your email accessible for OTP verification when needed</li>
         </ul>
 
         <h3>Prohibited Users</h3>
@@ -129,6 +145,43 @@
             <li>Users who have been previously banned from BodyIQ</li>
             <li>Automated systems, bots, or non-human entities</li>
         </ul>
+
+        <div class="face-data-section">
+            <h2>Face Data and Body Image Terms</h2>
+            
+            <h3>Image Collection and Use</h3>
+            <p><strong>What Images We Process:</strong></p>
+            <ul>
+                <li>Face images for facial feature analysis and body fat estimation</li>
+                <li>Biceps, back, legs, abdominal, and full body images for fitness assessment</li>
+                <li>All images are used solely for generating personalized fitness statistics</li>
+                <li>Images are required to provide accurate body analysis and recommendations</li>
+            </ul>
+
+            <h3>Image Storage and Retention</h3>
+            <ul>
+                <li><strong>Local Storage Only:</strong> All images are stored exclusively on your device</li>
+                <li><strong>No Server Upload:</strong> Images are never uploaded to or stored on our servers</li>
+                <li><strong>User Control:</strong> You can delete all images at any time through the app</li>
+                <li><strong>Retention Period:</strong> Images remain until app is uninstalled or manually deleted</li>
+            </ul>
+
+            <h3>Third-Party Processing</h3>
+            <ul>
+                <li><strong>Google Gemini AI:</strong> Images are temporarily sent for analysis only</li>
+                <li><strong>No Storage by Google:</strong> Google does not store or retain your images</li>
+                <li><strong>Immediate Processing:</strong> Images are analyzed and results returned immediately</li>
+                <li><strong>Privacy Protection:</strong> All processing follows strict privacy protocols</li>
+            </ul>
+
+            <h3>Your Rights Regarding Images</h3>
+            <ul>
+                <li>Right to delete all images from your device at any time</li>
+                <li>Right to stop using image analysis features</li>
+                <li>Right to uninstall the app and permanently remove all data</li>
+                <li>Right to use the app without uploading certain body part images</li>
+            </ul>
+        </div>
 
         <h2>Acceptable Use Policy</h2>
 
@@ -148,6 +201,7 @@
             <li>Sharing explicit, sexual, or inappropriate content</li>
             <li>Impersonating others or creating fake profiles</li>
             <li>Uploading images of minors (under 18) without parental consent</li>
+            <li>Using images of other people without their explicit consent</li>
         </ul>
 
         <h4>Technical Violations:</h4>
@@ -156,6 +210,7 @@
             <li>Using automated tools, bots, or scripts</li>
             <li>Attempting to access other users' private data or local storage</li>
             <li>Interfering with app functionality or security measures</li>
+            <li>Attempting to extract or copy other users' locally stored images</li>
         </ul>
 
         <h4>Community Violations:</h4>
@@ -174,6 +229,7 @@
             <li>Photos should be clear and well-lit for accurate analysis</li>
             <li>Each body part requires specific positioning for optimal results</li>
             <li>Images must comply with content guidelines (no nudity, inappropriate content)</li>
+            <li>Face images must show clear facial features for accurate analysis</li>
         </ul>
 
         <div class="highlight">
@@ -193,6 +249,7 @@
             <li>Results are for informational and motivational purposes only</li>
             <li>Individual results may vary based on image quality and other factors</li>
             <li>We do not guarantee 100% accuracy of AI-generated statistics</li>
+            <li>Face analysis and body analysis are for fitness purposes only</li>
         </ul>
 
         <h2>Payment Terms and Subscriptions</h2>
@@ -221,13 +278,33 @@
             <li>Contact your app store directly for refund requests</li>
         </ul>
 
+        <h2>Authentication and Account Security</h2>
+
+        <h3>Email and OTP Verification</h3>
+        <ul>
+            <li>BodyIQ uses email-based authentication with OTP (One-Time Password) verification</li>
+            <li>You must provide a valid email address for account creation</li>
+            <li>OTP codes are sent to your email for secure login verification</li>
+            <li>No third-party login services (Google, Facebook, etc.) are used or required</li>
+            <li>Keep your email account secure as it controls access to your BodyIQ account</li>
+        </ul>
+
+        <h3>Account Security Responsibilities</h3>
+        <ul>
+            <li>Maintain access to the email address associated with your account</li>
+            <li>Do not share OTP codes with anyone</li>
+            <li>Log out of shared devices after use</li>
+            <li>Report suspicious account activity immediately</li>
+        </ul>
+
         <h2>Privacy and Data Protection</h2>
         <p>We collect and process data as described in our Privacy Policy. Key points include:</p>
         <ul>
-            <li>Email addresses and subscription data are stored in our Supabase database</li>
+            <li>Only email addresses and subscription data are stored in our Supabase database</li>
             <li>All images and analysis data are stored locally on your device</li>
             <li>AI analysis is performed by Google Gemini AI with privacy protections</li>
             <li>You have complete control over locally stored images and data</li>
+            <li>No face data or body images are collected or stored on our servers</li>
         </ul>
 
         <h2>Disclaimers and Limitations</h2>
@@ -238,6 +315,7 @@
             <li>We do not guarantee accuracy, completeness, or reliability of analysis results</li>
             <li>Technical issues, errors, or interruptions may occur</li>
             <li>Third-party service dependencies may affect functionality</li>
+            <li>OTP delivery depends on email service availability</li>
         </ul>
 
         <h3>Liability Exclusions</h3>
@@ -246,6 +324,7 @@
             <li>Our liability is limited to the amount paid for the service</li>
             <li>We are not responsible for local data loss, device damage, or third-party actions</li>
             <li>Users assume risk for any decisions based on app analysis results</li>
+            <li>We are not responsible for email delivery issues or OTP code delays</li>
         </ul>
 
         <h2>Termination</h2>
@@ -263,7 +342,7 @@
             <p><strong>Support Hours:</strong> We aim to respond within 2-3 business days</p>
         </div>
 
-        <p><strong>Effective Date:</strong> August 4, 2025</p>
+        <p><strong>Effective Date:</strong> August 25, 2025</p>
     </div>
 </body>
 </html>
