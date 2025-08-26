@@ -35,6 +35,11 @@
             margin-top: 25px;
             margin-bottom: 10px;
         }
+        h4 {
+            color: #95a5a6;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
         .last-updated {
             background: #ecf0f1;
             padding: 10px;
@@ -52,6 +57,12 @@
             background: #fff3cd;
             padding: 15px;
             border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        .important {
+            background: #d1ecf1;
+            padding: 15px;
+            border-left: 4px solid #bee5eb;
             margin: 15px 0;
         }
         .face-data-section {
@@ -260,22 +271,59 @@
             <li>Subscription payments are processed through RevenueCat and your device's app store</li>
             <li>Subscription pricing and terms are displayed in the app before purchase</li>
             <li>Subscriptions automatically renew unless cancelled before the renewal date</li>
+            <li>Subscription renewal and cancellation records are maintained for account management</li>
+            <li>Free trial usage and scan count tracking may apply to new users</li>
         </ul>
+
+        <div class="important">
+            <h3>In-App Products</h3>
+            <p>BodyIQ offers various in-app products for purchase in addition to subscription services:</p>
+            
+            <h4>Available In-App Products:</h4>
+            <ul>
+                <li><strong>Premium Analysis:</strong> Enhanced AI analysis features and detailed reporting</li>
+                <li><strong>Advanced Comparisons:</strong> Extended friend and soulmate comparison features</li>
+                <li><strong>Exclusive Content:</strong> Premium fitness recommendations and personalized insights</li>
+                <li><strong>One-Time Features:</strong> Individual feature purchases for specific functionality</li>
+                <li><strong>Lifetime Access:</strong> Permanent access to premium features without ongoing subscription</li>
+            </ul>
+
+            <h4>In-App Product Terms:</h4>
+            <ul>
+                <li>Individual feature purchases provide permanent access to specific functionality</li>
+                <li>One-time purchase transaction records are maintained for account management</li>
+                <li>Product activation status and usage tracking ensure proper access control</li>
+                <li>Purchase receipts and payment confirmations are processed through RevenueCat</li>
+                <li>Lifetime access purchases remain active for the lifetime of your account</li>
+                <li>In-app products are non-transferable and tied to your specific account</li>
+                <li>Regional pricing and currency information may apply based on your location</li>
+            </ul>
+
+            <h4>Payment Processing for In-App Products:</h4>
+            <ul>
+                <li>All in-app product purchases are processed through RevenueCat payment system</li>
+                <li>Transaction IDs and purchase timestamps are recorded for verification</li>
+                <li>Payment method information is securely handled by RevenueCat</li>
+                <li>Refund requests for in-app products follow app store policies and guidelines</li>
+            </ul>
+        </div>
 
         <h3>Free Trial</h3>
         <ul>
             <li>New users receive a free trial with limited scans to test the app functionality</li>
-            <li>Once the free trial scan limit is reached, continued access requires an active subscription</li>
+            <li>Once the free trial scan limit is reached, continued access requires an active subscription or in-app product purchase</li>
             <li>Free trial terms and scan limits are displayed in the app</li>
-            <li>Users can subscribe at any time during or after the free trial period</li>
+            <li>Users can subscribe or purchase in-app products at any time during or after the free trial period</li>
         </ul>
 
         <h3>Cancellation and Refunds</h3>
         <ul>
             <li>Subscriptions can be cancelled at any time through your device's app store settings</li>
             <li>Cancellation will take effect at the end of the current billing period</li>
+            <li>In-app product purchases provide permanent access and cannot be cancelled, but may be eligible for refunds</li>
             <li>Refund policies follow Apple App Store and Google Play Store guidelines</li>
-            <li>Contact your app store directly for refund requests</li>
+            <li>Contact your app store directly for refund requests on both subscriptions and in-app products</li>
+            <li>Refund processing status is tracked for customer service purposes</li>
         </ul>
 
         <h2>Authentication and Account Security</h2>
@@ -300,11 +348,12 @@
         <h2>Privacy and Data Protection</h2>
         <p>We collect and process data as described in our Privacy Policy. Key points include:</p>
         <ul>
-            <li>Only email addresses and subscription data are stored in our Supabase database</li>
+            <li>Only email addresses, subscription data, and in-app product purchase information are stored in our Supabase database</li>
             <li>All images and analysis data are stored locally on your device</li>
             <li>AI analysis is performed by Google Gemini AI with privacy protections</li>
             <li>You have complete control over locally stored images and data</li>
             <li>No face data or body images are collected or stored on our servers</li>
+            <li>In-app product purchase records and transaction information are securely maintained</li>
         </ul>
 
         <h2>Disclaimers and Limitations</h2>
@@ -316,6 +365,7 @@
             <li>Technical issues, errors, or interruptions may occur</li>
             <li>Third-party service dependencies may affect functionality</li>
             <li>OTP delivery depends on email service availability</li>
+            <li>In-app product functionality depends on successful purchase verification</li>
         </ul>
 
         <h3>Liability Exclusions</h3>
@@ -325,10 +375,11 @@
             <li>We are not responsible for local data loss, device damage, or third-party actions</li>
             <li>Users assume risk for any decisions based on app analysis results</li>
             <li>We are not responsible for email delivery issues or OTP code delays</li>
+            <li>We are not liable for app store-related payment processing issues</li>
         </ul>
 
         <h2>Termination</h2>
-        <p>You may delete your account and stop using the service at any time. We may suspend or terminate accounts for violations of these Terms. Upon termination, your right to use the app ceases immediately, and local data remains on your device until the app is uninstalled.</p>
+        <p>You may delete your account and stop using the service at any time. We may suspend or terminate accounts for violations of these Terms. Upon termination, your right to use the app ceases immediately, and local data remains on your device until the app is uninstalled. Active subscriptions and in-app product purchases will remain valid according to their respective terms until expiration or as governed by app store policies.</p>
 
         <h2>Governing Law and Dispute Resolution</h2>
         <p>These Terms are governed by the laws of the Republic of India, and any disputes shall be resolved under the jurisdiction of the courts in Pune, Maharashtra.</p>
