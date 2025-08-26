@@ -35,7 +35,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 - **AI Processing:** Google Gemini AI for temporary image analysis
 - **Authentication Options:** Email + OTP verification and Google Sign-In
 - **Email Services:** Account verification and updates via Resend
-- **Subscription Management:** RevenueCat for payment processing and subscription handling
+- **Payment Processing:** RevenueCat for subscription and in-app product purchase handling
 - **Cross-Platform Compatibility:** Available on iOS and Android
 
 ## User Eligibility and Account Registration
@@ -163,7 +163,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 - We do not guarantee 100% accuracy of AI-generated statistics
 - Face analysis and body analysis are for fitness purposes only
 
-## Payment Terms and Subscriptions
+## Payment Terms and Purchases
 
 ### Subscription Service
 
@@ -172,19 +172,55 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 - Subscription pricing and terms are displayed in the app before purchase
 - Subscriptions automatically renew unless cancelled before the renewal date
 
+### In-App Products
+
+**Product Types:**
+- **Premium Analysis Features:** Advanced AI analysis and detailed reporting
+- **Comparison Add-ons:** Enhanced friend and soulmate comparison capabilities
+- **Progress Tracking Plus:** Extended historical data and advanced progress analytics
+- **Social Features Premium:** Additional sharing options and community features
+- **One-Time Unlocks:** Permanent access to specific app features without subscription
+
+**Purchase Terms:**
+- In-app products are one-time purchases processed through RevenueCat and your device's app store
+- Product pricing and descriptions are displayed in the app before purchase
+- Some products provide lifetime access to specific features
+- Products are tied to your account and app installation
+- Product functionality may depend on active account status
+
 ### Free Trial
 
 - New users receive a free trial with limited scans to test the app functionality
-- Once the free trial scan limit is reached, continued access requires an active subscription
+- Once the free trial scan limit is reached, continued access requires an active subscription or relevant in-app product purchases
 - Free trial terms and scan limits are displayed in the app
-- Users can subscribe at any time during or after the free trial period
+- Users can subscribe or purchase in-app products at any time during or after the free trial period
+
+### Payment Processing
+
+**Transaction Handling:**
+- All payments are securely processed through RevenueCat
+- Payment methods accepted include those supported by your device's app store
+- Transaction records are maintained for tax and legal compliance
+- Purchase confirmations are sent to your registered email address
 
 ### Cancellation and Refunds
 
+**Subscriptions:**
 - Subscriptions can be cancelled at any time through your device's app store settings
 - Cancellation will take effect at the end of the current billing period
-- Refund policies follow Google Play Store guidelines
-- Contact Google Play Store directly for refund requests
+- No refunds for unused portions of subscription periods unless required by law
+
+**In-App Products:**
+- In-app product purchases are generally final and non-refundable
+- Refund policies follow your device's app store guidelines
+- Contact the respective app store directly for refund requests
+- Refunds may be considered for technical issues that prevent product functionality
+
+**Refund Process:**
+- Refund requests must be submitted through the appropriate app store
+- We cannot process refunds directly as all payments are handled by app stores
+- Refund eligibility is determined by app store policies
+- Technical support is available to resolve issues before requesting refunds
 
 ## Authentication and Account Security
 
@@ -214,7 +250,7 @@ BodyIQ is a comprehensive fitness and body analysis mobile application that prov
 
 We collect and process data as described in our Privacy Policy. Key points include:
 
-- Only email addresses, Google account info (if applicable), and subscription data are stored in our Supabase database
+- Only email addresses, Google account info (if applicable), subscription data, and in-app purchase information are stored in our Supabase database
 - All images and analysis data are stored locally on your device
 - AI analysis is performed by Google Gemini AI with privacy protections
 - You have complete control over locally stored images and data
@@ -231,6 +267,7 @@ We collect and process data as described in our Privacy Policy. Key points inclu
 - Third-party service dependencies may affect functionality
 - OTP delivery depends on email service availability
 - Google Sign-In depends on Google services availability
+- In-app product functionality may be affected by technical issues or updates
 
 ### Liability Exclusions
 
@@ -238,11 +275,18 @@ We collect and process data as described in our Privacy Policy. Key points inclu
 - Our liability is limited to the amount paid for the service
 - We are not responsible for local data loss, device damage, or third-party actions
 - Users assume risk for any decisions based on app analysis results
-- We are not responsible for email delivery issues, OTP code delays, or Google Sign-In service interruptions
+- We are not responsible for email delivery issues, OTP code delays, Google Sign-In service interruptions, or payment processing issues
+- In-app product purchases are made at user's own risk and discretion
 
 ## Termination
 
-You may delete your account and stop using the service at any time. We may suspend or terminate accounts for violations of these Terms. Upon termination, your right to use the app ceases immediately, and local data remains on your device until the app is uninstalled.
+You may delete your account and stop using the service at any time. We may suspend or terminate accounts for violations of these Terms. Upon termination:
+
+- Your right to use the app ceases immediately
+- Local data remains on your device until the app is uninstalled
+- Active subscriptions continue until the end of the current billing period
+- In-app product purchases may become inaccessible
+- Account deletion will remove access to purchased features
 
 If using Google Sign-In, you can revoke access permissions through your Google account settings.
 
@@ -256,8 +300,7 @@ For questions, concerns, or support regarding these Terms:
 
 **Email:** meghraj.ranaware22@vit.edu  
 **Developer:** Meghraj Ranaware  
-**App:** BodyIQ
-
+**App:** BodyIQ  
 **Support Hours:** We aim to respond within 2-3 business days
 
 **Effective Date:** August 25, 2025
