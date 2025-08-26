@@ -1,8 +1,8 @@
 BodyIQ Privacy Policy
 Last Updated: August 25, 2025
 Introduction
-Welcome to BodyIQ, a comprehensive fitness and body analysis mobile application. This Privacy Policy explains how Meghraj Ranaware ("we," "us," or "our") collects, uses, protects, and shares your information when you use our BodyIQ mobile application ("App," "Service," or "Application").
-We are committed to protecting your privacy and ensuring transparency in our data practices. By using BodyIQ, you agree to the collection and use of information in accordance with this policy.
+Welcome to BodyIQ, a comprehensive fitness and body analysis mobile application. This Privacy Policy explains how Meghraj Ranaware ("we," "us," or "our") collects, uses, protects, and shares your information when you use our BodyIQ mobile application ("App," "Service," or "Application"). We are committed to protecting your privacy and ensuring transparency in our data practices.
+By using BodyIQ, you agree to the collection and use of information in accordance with this policy.
 Face Data and Body Image Collection - Google Play Store Compliance
 What Face Data and Body Images Does BodyIQ Collect?
 Face Data Collected:
@@ -51,6 +51,7 @@ What We Actually Collect and Store in Our Database:
 Email addresses (via email/OTP or Google Sign-In)
 Google account information (if using Google Sign-In)
 Subscription status and payment information
+In-app product purchase information and transaction records
 User account preferences
 
 What We DO NOT Collect or Store:
@@ -75,12 +76,28 @@ Authentication Methods:
 Email + OTP Verification: Direct email registration with one-time password verification
 Google Sign-In: Authentication through Google account with permission-based access to profile information
 
-Subscription and Usage Data:
+Subscription and Purchase Data:
+Subscription Services:
 
 Subscription status and payment history
+Weekly subscription preferences and settings
+Subscription renewal and cancellation records
 Free trial usage and scan count tracking
-Purchase receipts and transaction records
-Subscription preferences and settings
+
+In-App Products:
+
+Individual feature purchases (premium analysis, advanced comparisons, etc.)
+One-time purchase transaction records
+Product activation status and usage tracking
+Purchase receipts and payment confirmations
+Lifetime access purchases and their activation status
+
+Payment Processing:
+
+Transaction IDs and purchase timestamps
+Payment method information (processed by RevenueCat)
+Refund requests and processing status
+Regional pricing and currency information
 
 Body Analysis Data (Stored Locally ONLY):
 
@@ -129,22 +146,22 @@ Store comparison results for future reference (in device memory only)
 
 App Functionality:
 
-Maintain your account and user profile (email and subscription data stored in database)
+Maintain your account and user profile (email and subscription/purchase data stored in database)
 Send email confirmations and OTP verification codes (via Resend service)
 Authenticate users through Google Sign-In when selected
-Process subscription management and payments (via RevenueCat)
+Process subscription management and in-app product purchases (via RevenueCat)
 Provide customer support and respond to inquiries
 Improve app performance and user experience
 
 Data Storage and Processing
 Storage Infrastructure
+Primary Database: Supabase (stores ONLY email addresses, Google account info if applicable, subscription data, and in-app purchase information)
 
-Primary Database: Supabase (stores ONLY email addresses, Google account info if applicable, and subscription data)
 Image Storage: Local device memory via Redux store (NO cloud storage - all images remain on user's device)
 Email Services: Resend for email confirmations and OTP verification
 Google Services: Google Sign-In for authentication (when user chooses this option)
 AI Processing: Google Gemini AI for image analysis (temporary processing only - no storage)
-Subscription Management: RevenueCat for payment processing and subscription handling
+Payment Processing: RevenueCat for subscription and in-app product purchase handling
 
 Data Processing Flow
 
@@ -153,7 +170,7 @@ Images temporarily sent to Google Gemini AI for analysis (not stored by Google)
 AI analysis results returned and stored locally on your device
 Original images remain only on your device (never uploaded to any server for storage)
 Analysis results displayed in app interface
-Only email addresses, Google account info (if applicable), and subscription data are stored in our Supabase database
+Only email addresses, Google account info (if applicable), subscription data, and in-app purchase information are stored in our Supabase database
 
 Local Data Storage
 
@@ -166,8 +183,8 @@ Data Sharing and Disclosure
 With Service Providers
 We share limited data with trusted third-party service providers:
 
-Supabase: Email address, Google account info (if applicable), and subscription data storage ONLY
-RevenueCat: Subscription management and payment processing
+Supabase: Email address, Google account info (if applicable), subscription data, and in-app purchase information storage ONLY
+RevenueCat: Subscription management, in-app product purchase processing, and payment handling
 Google Services: Authentication services (if user chooses Google Sign-In)
 Google Gemini AI: Temporary image analysis processing (images not stored by Google)
 Resend: Email delivery and OTP verification services
@@ -195,6 +212,7 @@ Database-Stored Data
 Email addresses: Retained while account is active plus 30 days after deletion
 Google account information: Retained while account is active plus 30 days after deletion
 Subscription data: Retained for 7 years for tax and legal compliance
+In-app purchase data: Retained for 7 years for tax and legal compliance
 Free trial usage data: Retained while account is active plus 30 days after deletion
 Account data: Retained while account is active plus 30 days after deletion
 
@@ -209,7 +227,7 @@ Zero server retention: No face data or body images are retained on any servers
 Data Security
 Technical Safeguards
 
-Database Encryption: Email, Google account info, and subscription data encrypted in transit and at rest
+Database Encryption: Email, Google account info, subscription, and purchase data encrypted in transit and at rest
 Local Storage Security: Data encrypted within Redux store on device
 Access Controls: Limited access to database data by authorized personnel only
 Regular Audits: Periodic security assessments and updates
@@ -232,9 +250,9 @@ User Control: Complete control over local data deletion
 Your Privacy Rights
 Access and Control
 
-View Your Data: Access email, Google account info (if applicable), and subscription information we have stored
+View Your Data: Access email, Google account info (if applicable), subscription, and purchase information we have stored
 Update Information: Correct or modify your email, Google account preferences, and account settings
-Download Data: Export your email and subscription data in a portable format
+Download Data: Export your email, subscription, and purchase data in a portable format
 Delete Account: Permanently remove your account and data from our database
 Local Data Control: Manage all images and analysis data through app settings
 Google Account Management: Revoke Google Sign-In permissions through Google account settings
@@ -272,11 +290,11 @@ Parents and guardians who believe their child has provided us with personal info
 Third-Party Services
 Our app integrates with several third-party services, each with their own privacy policies:
 
-RevenueCat: Subscription management and payment processing
+RevenueCat: Subscription management, in-app product purchase processing, and payment handling
 Apple App Store / Google Play Store: Payment processing
 Google Sign-In: Authentication services (when user chooses this option)
 Google Gemini AI: Temporary image analysis (images not stored)
-Supabase: Email, Google account info, and subscription data storage
+Supabase: Email, Google account info, subscription, and purchase data storage
 Resend: Email communications and OTP verification
 
 Changes to This Privacy Policy
