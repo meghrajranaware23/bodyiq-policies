@@ -151,8 +151,10 @@
             <h3>Data Collection Summary for Apple Compliance</h3>
             <p><strong>What We Actually Collect and Store in Our Database:</strong></p>
             <ul>
-                <li>Email addresses only</li>
+                <li>Email addresses (via email/OTP or Google Sign-In)</li>
+                <li>Google account information (if using Google Sign-In)</li>
                 <li>Subscription status and payment information</li>
+                <li>In-app product purchase information and transaction records</li>
                 <li>User account preferences</li>
             </ul>
             
@@ -171,18 +173,43 @@
 
         <h4>Account Information:</h4>
         <ul>
-            <li>Email address (for account creation and OTP verification)</li>
+            <li>Email address (for account creation and OTP verification, or via Google Sign-In)</li>
+            <li>Google account information (name, email, profile picture) if using Google Sign-In</li>
             <li>User ID (generated automatically)</li>
             <li>Age and gender (for personalized analysis)</li>
             <li>Profile preferences and settings</li>
         </ul>
 
-        <h4>Subscription and Usage Data:</h4>
+        <h4>Authentication Methods:</h4>
+        <ul>
+            <li><strong>Email + OTP Verification:</strong> Direct email registration with one-time password verification</li>
+            <li><strong>Google Sign-In:</strong> Authentication through Google account with permission-based access to profile information</li>
+        </ul>
+
+        <h4>Subscription and Purchase Data:</h4>
+        <p><strong>Subscription Services:</strong></p>
         <ul>
             <li>Subscription status and payment history</li>
+            <li>Weekly subscription preferences and settings</li>
+            <li>Subscription renewal and cancellation records</li>
             <li>Free trial usage and scan count tracking</li>
-            <li>Purchase receipts and transaction records</li>
-            <li>Subscription preferences and settings</li>
+        </ul>
+
+        <p><strong>In-App Products:</strong></p>
+        <ul>
+            <li>Individual feature purchases (premium analysis, advanced comparisons, etc.)</li>
+            <li>One-time purchase transaction records</li>
+            <li>Product activation status and usage tracking</li>
+            <li>Purchase receipts and payment confirmations</li>
+            <li>Lifetime access purchases and their activation status</li>
+        </ul>
+
+        <p><strong>Payment Processing:</strong></p>
+        <ul>
+            <li>Transaction IDs and purchase timestamps</li>
+            <li>Payment method information (processed by RevenueCat)</li>
+            <li>Refund requests and processing status</li>
+            <li>Regional pricing and currency information</li>
         </ul>
 
         <div class="important">
@@ -241,9 +268,10 @@
 
         <h4>App Functionality:</h4>
         <ul>
-            <li>Maintain your account and user profile (email and subscription data stored in database)</li>
+            <li>Maintain your account and user profile (email and subscription/purchase data stored in database)</li>
             <li>Send email confirmations and OTP verification codes (via Resend service)</li>
-            <li>Process subscription management and payments (via RevenueCat)</li>
+            <li>Authenticate users through Google Sign-In when selected</li>
+            <li>Process subscription management and in-app product purchases (via RevenueCat)</li>
             <li>Provide customer support and respond to inquiries</li>
             <li>Improve app performance and user experience</li>
         </ul>
@@ -252,11 +280,12 @@
 
         <h3>Storage Infrastructure</h3>
         <ul>
-            <li><strong>Primary Database:</strong> Supabase (stores ONLY email addresses and subscription data)</li>
+            <li><strong>Primary Database:</strong> Supabase (stores ONLY email addresses, Google account info if applicable, subscription data, and in-app purchase information)</li>
             <li><strong>Image Storage:</strong> Local device memory via Redux store (NO cloud storage - all images remain on user's device)</li>
             <li><strong>Email Services:</strong> Resend for email confirmations and OTP verification</li>
+            <li><strong>Google Services:</strong> Google Sign-In for authentication (when user chooses this option)</li>
             <li><strong>AI Processing:</strong> Google Gemini AI for image analysis (temporary processing only - no storage)</li>
-            <li><strong>Subscription Management:</strong> RevenueCat for payment processing and subscription handling</li>
+            <li><strong>Payment Processing:</strong> RevenueCat for subscription and in-app product purchase handling</li>
         </ul>
 
         <div class="data-flow">
@@ -267,7 +296,7 @@
                 <li>AI analysis results returned and stored locally on your device</li>
                 <li>Original images remain only on your device (never uploaded to any server for storage)</li>
                 <li>Analysis results displayed in app interface</li>
-                <li>Only email addresses and subscription data are stored in our Supabase database</li>
+                <li>Only email addresses, Google account info (if applicable), subscription data, and in-app purchase information are stored in our Supabase database</li>
             </ol>
         </div>
 
@@ -286,8 +315,9 @@
         <h3>With Service Providers</h3>
         <p>We share limited data with trusted third-party service providers:</p>
         <ul>
-            <li><strong>Supabase:</strong> Email address and subscription data storage ONLY</li>
-            <li><strong>RevenueCat:</strong> Subscription management and payment processing</li>
+            <li><strong>Supabase:</strong> Email address, Google account info (if applicable), subscription data, and in-app purchase information storage ONLY</li>
+            <li><strong>RevenueCat:</strong> Subscription management, in-app product purchase processing, and payment handling</li>
+            <li><strong>Google Services:</strong> Authentication services (if user chooses Google Sign-In)</li>
             <li><strong>Google Gemini AI:</strong> Temporary image analysis processing (images not stored by Google)</li>
             <li><strong>Resend:</strong> Email delivery and OTP verification services</li>
             <li><strong>App Store Platforms:</strong> Google Play Services and Apple App Store</li>
@@ -316,7 +346,9 @@
         <h3>Database-Stored Data</h3>
         <ul>
             <li><strong>Email addresses:</strong> Retained while account is active plus 30 days after deletion</li>
+            <li><strong>Google account information:</strong> Retained while account is active plus 30 days after deletion</li>
             <li><strong>Subscription data:</strong> Retained for 7 years for tax and legal compliance</li>
+            <li><strong>In-app purchase data:</strong> Retained for 7 years for tax and legal compliance</li>
             <li><strong>Free trial usage data:</strong> Retained while account is active plus 30 days after deletion</li>
             <li><strong>Account data:</strong> Retained while account is active plus 30 days after deletion</li>
         </ul>
@@ -334,10 +366,11 @@
 
         <h3>Technical Safeguards</h3>
         <ul>
-            <li><strong>Database Encryption:</strong> Email and subscription data encrypted in transit and at rest</li>
+            <li><strong>Database Encryption:</strong> Email, Google account info, subscription, and purchase data encrypted in transit and at rest</li>
             <li><strong>Local Storage Security:</strong> Data encrypted within Redux store on device</li>
             <li><strong>Access Controls:</strong> Limited access to database data by authorized personnel only</li>
             <li><strong>Regular Audits:</strong> Periodic security assessments and updates</li>
+            <li><strong>Google Sign-In Security:</strong> Secure OAuth 2.0 authentication protocols</li>
         </ul>
 
         <h3>AI Processing Security</h3>
@@ -362,17 +395,19 @@
 
         <h3>Access and Control</h3>
         <ul>
-            <li><strong>View Your Data:</strong> Access email and subscription information we have stored</li>
-            <li><strong>Update Information:</strong> Correct or modify your email and account settings</li>
-            <li><strong>Download Data:</strong> Export your email and subscription data in a portable format</li>
+            <li><strong>View Your Data:</strong> Access email, Google account info (if applicable), subscription, and purchase information we have stored</li>
+            <li><strong>Update Information:</strong> Correct or modify your email, Google account preferences, and account settings</li>
+            <li><strong>Download Data:</strong> Export your email, subscription, and purchase data in a portable format</li>
             <li><strong>Delete Account:</strong> Permanently remove your account and data from our database</li>
             <li><strong>Local Data Control:</strong> Manage all images and analysis data through app settings</li>
+            <li><strong>Google Account Management:</strong> Revoke Google Sign-In permissions through Google account settings</li>
         </ul>
 
         <h3>Communication Preferences</h3>
         <ul>
             <li><strong>Email Notifications:</strong> Control what emails you receive</li>
             <li><strong>OTP Verification:</strong> Manage email-based authentication preferences</li>
+            <li><strong>Google Sign-In Preferences:</strong> Manage Google authentication settings</li>
             <li><strong>Push Notifications:</strong> Manage app notification settings</li>
             <li><strong>Marketing Communications:</strong> Opt out of promotional messages</li>
             <li><strong>Social Sharing:</strong> Control what data appears in shared content</li>
@@ -407,10 +442,11 @@
         <h2>Third-Party Services</h2>
         <p>Our app integrates with several third-party services, each with their own privacy policies:</p>
         <ul>
-            <li><strong>RevenueCat:</strong> Subscription management and payment processing</li>
+            <li><strong>RevenueCat:</strong> Subscription management, in-app product purchase processing, and payment handling</li>
             <li><strong>Apple App Store / Google Play Store:</strong> Payment processing</li>
+            <li><strong>Google Sign-In:</strong> Authentication services (when user chooses this option)</li>
             <li><strong>Google Gemini AI:</strong> Temporary image analysis (images not stored)</li>
-            <li><strong>Supabase:</strong> Email and subscription data storage</li>
+            <li><strong>Supabase:</strong> Email, Google account info, subscription, and purchase data storage</li>
             <li><strong>Resend:</strong> Email communications and OTP verification</li>
         </ul>
 
