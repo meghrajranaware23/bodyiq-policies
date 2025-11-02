@@ -2,215 +2,223 @@ Privacy Policy for Reels Counter
 
 Last updated: November 2, 2025
 
-Introduction
+1. Introduction
 
-Reels Counter ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our mobile application collects, uses, and safeguards your information.
+Welcome to Reels Counter ("we," "our," or "us").
+We are committed to protecting your privacy and ensuring that your data remains secure.
+This Privacy Policy explains how our mobile application collects, uses, and safeguards your information.
 
-Information We Collect
+2. Information We Collect
+2.1 Local Data Only
 
-Local Data Only
+We respect your privacy — all data stays on your device.
 
-Usage Counts: The app stores simple counters of your content consumption locally on your device.
+We only store:
 
-Timestamps: Date and time information for when you use the counter feature.
+Usage Counts: Counters of your content consumption.
 
-No Personal Information: We do not collect, store, or transmit any personal information.
+Timestamps: Date and time when you use the counter.
 
-Data Storage
+No Personal Information: We do not collect, store, or transmit any personal or identifiable data.
 
-All data is stored locally on your device using Android’s SharedPreferences.
+2.2 Data Storage
 
-No data is transmitted to external servers.
+All data is stored locally using Android’s SharedPreferences.
 
-No data is shared with third parties.
+No external servers are used.
 
-How We Use Your Information
+No data is shared with any third parties.
 
-The app uses your local data only to:
+3. How We Use Your Information
+
+Your local data is used only to:
 
 Display your daily and total consumption counts.
 
 Provide historical tracking of your usage patterns.
 
-Maintain app functionality.
+Maintain and enhance app functionality.
 
-Auto-Scroll Feature & Accessibility Service
-What is Auto-Scroll?
+No personal data ever leaves your device.
 
-The auto-scroll feature is an optional functionality that automatically scrolls through content (like Instagram Reels, YouTube Shorts, TikTok videos) while you're away from your device. This helps you:
+4. Auto-Scroll Feature & Accessibility Service
+4.1 What is Auto-Scroll?
 
-Simulate natural viewing patterns when you're not actively using your phone.
+Auto-Scroll is an optional feature that automatically scrolls through short video content (e.g., Instagram Reels, YouTube Shorts, TikTok videos).
 
-Continue content consumption tracking even during passive viewing.
+This feature helps you:
 
-Maintain consistent usage statistics for better habit tracking.
+Simulate natural viewing patterns.
 
-Why We Need Accessibility Service Permission
+Track your usage even during passive viewing.
 
-The Accessibility Service permission is required for the auto-scroll feature because:
+Maintain consistent statistics for habit tracking.
 
-Content Detection: It allows the app to identify video content areas on your screen.
+4.2 Why Accessibility Service Permission is Needed
 
-Safe Scrolling: It ensures scrolling only happens in video areas, avoiding buttons or ads.
+We use Android’s Accessibility Service to:
 
-Cross-App Compatibility: It works across different social media apps (Instagram, TikTok, YouTube, Snapchat).
+Detect video areas for safe scrolling.
 
-User Safety: It prevents accidental interactions with unintended UI elements.
+Perform automated gestures only within supported apps.
 
-Important Notes About Accessibility Service:
-✅ Completely Optional
-✅ User Controlled
-✅ No Data Collection
-✅ Privacy Focused
-✅ Transparent Operation
+Avoid unintended interactions with buttons or ads.
 
-Accessibility Service Data Access Declaration
+Enable compatibility across platforms like Instagram, TikTok, YouTube, and Snapchat.
 
-What data we access through Accessibility Service:
+4.3 Important Notes
 
-Screen content to detect video/reel areas for safe scrolling.
+✅ Optional: Auto-scroll is not required to use the app.
+✅ User Controlled: You can enable/disable it anytime in Android Settings.
+✅ No Data Access: It cannot read or transmit any personal data.
+✅ Transparent: All scrolling actions are visible on-screen.
 
-Window information to identify supported social media apps.
+5. Accessibility Service Data Access Declaration
+5.1 What We Access
 
-Touch interaction capabilities to perform scroll gestures.
+Screen content (to detect reel or video areas).
 
-How we use this data:
+Window information (to identify supported apps).
 
-To detect and count reels in supported apps (Instagram, YouTube, TikTok, Snapchat).
+Touch interaction capabilities (to perform scroll gestures).
 
-To automatically scroll through content when auto-scroll is enabled.
+5.2 How We Use It
 
-Data is processed locally in real time and never stored or transmitted.
+Detect and count reels or short videos in supported apps.
 
-What we DO NOT access:
+Perform safe automatic scrolling when enabled.
 
-Personal messages, emails, or text content.
+Process data locally and in real time — never stored or transmitted.
 
-Passwords, login credentials, or account information.
+5.3 What We Do NOT Access
 
-Photos, videos, or media files.
+❌ Personal messages, emails, or chat content.
+❌ Passwords, login credentials, or accounts.
+❌ Photos, videos, or files on your device.
+❌ Contact information or personal data.
+❌ Any data beyond scroll detection.
 
-Contact information or personal data.
+6. How Auto-Scroll Works
 
-Any data outside of scroll detection functionality.
+You enable Accessibility Service in Android Settings (optional).
 
-How Auto-Scroll Works:
+The app detects video content on supported platforms.
 
-You enable the accessibility service in Android Settings (optional).
+Gentle swipe gestures are performed automatically.
 
-The app detects when you're viewing supported content.
+Your content counter increases with each scroll.
 
-It performs gentle swipe gestures in safe video areas only.
+You can disable this feature anytime.
 
-It automatically increments your content counter.
+7. What the Accessibility Service CANNOT Do
 
-You can disable it anytime through Android Settings.
+❌ Read your messages or private data.
 
-What the Accessibility Service CANNOT Do:
+❌ Access your accounts or passwords.
 
-❌ Read your personal messages or data
-❌ Access your accounts or passwords
-❌ Interact with other apps beyond scrolling
-❌ Send or receive any information
-❌ Modify your device settings
+❌ Interact with apps beyond scrolling.
 
-Subscription & Ads
+❌ Send or receive information.
 
-We offer an optional subscription that enhances your experience within the app.
+❌ Modify your system settings.
 
-Subscription Features:
+8. Subscription & Advertisements
+8.1 Subscription Features
 
-Ad-Free Experience: Subscribers can use the app without ads.
+Reels Counter offers an optional premium subscription for an enhanced experience:
 
-Advanced Analytics: Subscribers gain access to detailed reel counting analysis and extended history tracking.
+🚫 Ad-Free Experience: Remove all in-app advertisements.
 
-Usage Notifications: Subscribers can set usage limits and receive local notifications when their limit is reached.
+📊 Advanced Analytics: Unlock detailed reel counting and insights.
 
-Future Premium Features: Any upcoming premium tools will be available to subscribers at no additional cost.
+🔔 Usage Notifications: Get notified when you reach your daily limit.
 
-Subscription Handling:
+🌟 Future Perks: Access upcoming premium tools automatically.
+
+8.2 Subscription Management
 
 All purchases and subscriptions are handled securely through Google Play Billing.
 
-We do not collect or store any payment information.
+We do not collect or store any payment data.
 
-Subscription status and purchase validation are managed by Google Play.
+Subscription validation and management are handled by Google Play.
 
-Advertisements:
+8.3 Advertisements (Free Users)
 
-Non-subscribed users may see ads within the app.
+Non-subscribers may see ads in the app.
 
-Ads are served through trusted third-party ad networks that comply with Google Play and privacy standards.
+Ads are provided via trusted third-party networks that comply with Google and Android privacy standards.
 
-No personally identifiable information is shared with advertisers.
+No personal data is shared with advertisers.
 
-Notifications
+9. Notifications
 
-The app may send local notifications to inform you when you have reached your preset content consumption limit.
+Local notifications are used to remind you when you reach your set limit.
 
-These notifications are generated and processed entirely on your device.
+All notifications are processed on-device only.
 
 No external servers are used for notification delivery.
 
-Data Security
+10. Data Security
 
-All data remains on your device.
+We take privacy seriously:
 
-No internet connection is required for core functionality.
+All data stays on your device.
 
-No data transmission occurs.
+The app works offline for core features.
 
-Your Rights
+No internet connection is required to function.
 
-Access: You can view all your data within the app.
+11. Your Rights
 
-Deletion: You can clear all data using the "Clear All Data" feature in the app.
+You have full control over your data:
 
-Control: You have full control over when the overlay and accessibility features are active.
+🔍 Access: View all stored data directly within the app.
 
-Permissions
+🗑️ Deletion: Clear all stored data using the “Clear All Data” option.
 
-The app requests the following permissions:
+⚙️ Control: Enable or disable overlay and accessibility features at any time.
 
-Display over other apps (SYSTEM_ALERT_WINDOW): Required for the floating counter button functionality.
+12. Permissions Used
+Permission	Purpose
+SYSTEM_ALERT_WINDOW	Required for the floating counter button overlay
+FOREGROUND_SERVICE	Keeps overlay active in the background
+WAKE_LOCK	Prevents the device from sleeping while overlay is active
+INTERNET	Used only for ads (non-subscribed users) or navigation to settings
+BIND_ACCESSIBILITY_SERVICE	Enables optional auto-scroll functionality
+Battery Optimization Exemption	Ensures the overlay runs reliably
 
-Foreground service: Required to keep the overlay button active in the background.
+Note: All permissions are used only for app functionality.
+No personal data is collected or transmitted through these permissions.
 
-Wake lock: Prevents the device from sleeping while the overlay is active.
+13. Children’s Privacy
 
-Internet access: Used only for ads (if not subscribed) and for navigating to device settings when needed.
+Reels Counter does not collect any personal data and is safe for users of all ages.
 
-Accessibility service (BIND_ACCESSIBILITY_SERVICE): Optional feature for auto-scroll functionality that automatically scrolls through content. This permission allows the app to perform touch gestures on your screen to scroll through videos. User must explicitly enable this in Android Settings. This service only performs scrolling actions and cannot read, access, or transmit any personal data.
+14. Changes to This Policy
 
-Battery optimization exemption: Ensures the overlay service runs reliably.
+We may update this Privacy Policy periodically.
+All updates will be reflected within the app or on our official GitHub repository.
 
-Important: All permissions are used solely for app functionality. No personal data is collected or transmitted through these permissions.
+15. Contact Us
 
-Children’s Privacy
+If you have questions about this Privacy Policy, please contact us:
 
-Our app does not collect any personal information and is safe for users of all ages.
+📧 Email: profilesleetcode@gmail.com
 
-Changes to This Policy
+📱 App Name: Reels Counter – Habit Tracker
+👥 Developer: ReelCounter Team
 
-We may update this Privacy Policy from time to time. Any changes will be reflected in the app update.
+We aim to respond to all privacy inquiries within 48 hours.
 
-Contact Us
-
-If you have any questions about this Privacy Policy, please contact us at:
-
-Email: profilesleetcode@gmail.com
-
-App Name: Reels Counter – Habit Tracker
-Developer: ReelCounter Team
-
-We will respond to privacy-related inquiries within 48 hours.
-
-Compliance
+16. Compliance
 
 This app complies with:
 
-Google Play Store policies
+✅ Google Play Store Policies
 
-Android privacy guidelines
+✅ Android Privacy Guidelines
 
-General Data Protection Regulation (GDPR) principles
+✅ General Data Protection Regulation (GDPR) Principles
+
+© 2025 ReelCounter Team. All rights reserved.
