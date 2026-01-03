@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit - App Support</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .header p {
+      font-size: 1.1em;
+      opacity: 0.95;
+    }
+    
+    .content {
+      padding: 40px 30px;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    h2 {
+      color: #667eea;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    h3 {
+      color: #764ba2;
+      font-size: 1.3em;
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+    
+    p {
+      margin-bottom: 15px;
+      color: #555;
+      font-size: 1.05em;
+    }
+    
+    ul {
+      margin: 15px 0 15px 30px;
+      color: #555;
+    }
+    
+    li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    a:hover {
+      color: #764ba2;
+      text-decoration: underline;
+    }
+    
+    .contact-box {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 30px 0;
+    }
+    
+    .contact-box h2 {
+      color: white;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    
+    .contact-box p {
+      color: white;
+      margin-bottom: 10px;
+    }
+    
+    .contact-box a {
+      color: white;
+      text-decoration: underline;
+      font-size: 1.2em;
+    }
+    
+    .highlight-box {
+      background: #f0f4ff;
+      border-left: 4px solid #667eea;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    
+    .faq-item {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    
+    .faq-question {
+      font-weight: 600;
+      color: #667eea;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+    
+    .faq-answer {
+      color: #555;
+      margin-bottom: 0;
+    }
+    
+    .resources-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    
+    .resources-list li {
+      background: #f0f4ff;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    
+    .resources-list li:hover {
+      transform: translateX(5px);
+      background: #e0ebff;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f9f9f9;
+      color: #888;
+      font-size: 0.95em;
+    }
+    
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2em;
+      }
+      
+      .content {
+        padding: 30px 20px;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚀 Orbit Support</h1>
+      <p>Your All-in-One Personal Optimization App</p>
+    </div>
+    
+    <div class="content">
+      <p>Welcome to the official support page for <strong>Orbit</strong>. Here you can find help, troubleshooting tips, and ways to contact us if you experience any issues with the app.</p>
+      
+      <div class="section">
+        <h2>Quick Start Guide</h2>
+        <div class="highlight-box">
+          <p><strong>New to Orbit?</strong> Our app combines fitness tracking, calorie counting, habit building, sleep analysis, and self-improvement tools in one place. All your data is stored locally on your device for maximum privacy.</p>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Common Issues & Solutions</h2>
+        <ul>
+          <li><strong>CalAI not estimating calories:</strong> Ensure you've granted camera and photo library permissions in Settings → Orbit. Take clear, well-lit photos of your food for best results.</li>
+          <li><strong>Workouts not saving:</strong> Make sure you complete the workout session and tap "Finish" before exiting the app.</li>
+          <li><strong>Habit streaks reset:</strong> Habits are tracked locally. If you reinstall the app, your data will be lost as we don't store anything on servers.</li>
+          <li><strong>App crashes or freezes:</strong> Ensure you're running the latest version of iOS and Orbit. Try restarting your device if issues persist.</li>
+          <li><strong>Sleep tracking not working:</strong> Grant all necessary permissions and ensure the app remains open or running in the background during sleep tracking.</li>
+        </ul>
+      </div>
+      
+      <div class="section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <p class="faq-question">Q: Is my data private and secure?</p>
+          <p class="faq-answer">A: Yes! All your data (habits, workouts, calories, sleep, photos) is stored locally on your device only. We do NOT store any of your personal information on our servers. Your privacy is our top priority.</p>
+        </div>
+        
+        <div class="faq-item">
+          <p class="faq-question">Q: How does the AI calorie estimation work?</p>
+          <p class="faq-answer">A: Our CalAI feature uses advanced AI to analyze food photos or descriptions and estimate calories, protein, carbs, and fats. Simply take a photo or describe what you ate, and the AI does the rest.</p>
+        </div>
+        
+        <div class="faq-item">
+          <p class="faq-question">Q: Can I backup my data?</p>
+          <p class="faq-answer">A: Currently, all data is stored locally. If you uninstall the app, your data will be permanently deleted. We recommend keeping the app installed to maintain your progress and streaks.</p>
+        </div>
+        
+        <div class="faq-item">
+          <p class="faq-question">Q: How do I use the looks/self-improvement feature?</p>
+          <p class="faq-answer">A: This optional feature analyzes selfies locally on your device to provide grooming and appearance insights. Your photos are never uploaded to our servers and are processed entirely on your device.</p>
+        </div>
+        
+        <div class="faq-item">
+          <p class="faq-question">Q: Do I need an account to use Orbit?</p>
+          <p class="faq-answer">A: No! Most features work without an account. We use anonymous login for basic app functionality, but you remain completely anonymous and your data stays on your device.</p>
+        </div>
+        
+        <div class="faq-item">
+          <p class="faq-question">Q: Will I get a refund if I'm not satisfied?</p>
+          <p class="faq-answer">A: Refunds are handled by Apple. Please visit <a href="https://reportaproblem.apple.com/" target="_blank">Apple's support site</a> to request a refund for App Store purchases.</p>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Feature Overview</h2>
+        <ul>
+          <li><strong>CalAI:</strong> AI-powered calorie estimation from food photos and descriptions with macro tracking</li>
+          <li><strong>Fitness:</strong> Track gym workouts, exercises, sets, reps, and training progress</li>
+          <li><strong>Habits:</strong> Visual year-based habit tracking to build long-term discipline</li>
+          <li><strong>Sleep & Recovery:</strong> Monitor sleep patterns and recovery metrics</li>
+          <li><strong>Looks/Self-Improvement:</strong> Optional selfie-based analysis for personal grooming insights</li>
+        </ul>
+      </div>
+      
+      <div class="contact-box">
+        <h2>📧 Contact Support</h2>
+        <p>Need more help? We're here to assist you!</p>
+        <p><strong>Email:</strong> <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a></p>
+        <p style="margin-top: 15px; font-size: 0.95em;">We typically respond within 24-48 hours. Please include details about your device (iPhone model, iOS version) and a description of the issue you're experiencing.</p>
+      </div>
+      
+      <div class="section">
+        <h2>Additional Resources</h2>
+        <ul class="resources-list">
+          <li>📄 <a href="https://meghrajranaware23.github.io/bodyiq-policies/orbit-privacy-policy.html" target="_blank">Privacy Policy</a> - Learn how we protect your data</li>
+          <li>📋 <a href="https://meghrajranaware23.github.io/bodyiq-policies/orbit-termsandconditions.html" target="_blank">Terms and Conditions</a> - Read our terms of service</li>
+        </ul>
+      </div>
+      
+      <div class="section">
+        <h2>Feedback & Suggestions</h2>
+        <p>We're constantly working to improve Orbit! If you have ideas for new features or suggestions for improvements, please reach out to us at <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a>. Your feedback helps us build a better app for everyone.</p>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2026 Orbit. All rights reserved.</p>
+      <p style="margin-top: 10px;">Made with 🚀 for your personal optimization journey</p>
+    </footer>
+  </div>
+</body>
+</html>
