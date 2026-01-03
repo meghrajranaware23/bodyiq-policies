@@ -1,267 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orbit - Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .header p {
-            font-size: 1em;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 40px 30px;
-        }
-        
-        h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin: 30px 0 15px 0;
-            font-weight: 600;
-        }
-        
-        h3 {
-            color: #764ba2;
-            font-size: 1.3em;
-            margin: 20px 0 10px 0;
-            font-weight: 600;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        
-        ul {
-            margin: 15px 0 15px 30px;
-            color: #555;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        .highlight-box {
-            background: #f0f4ff;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        
-        .highlight-box strong {
-            color: #667eea;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        
-        .contact-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-top: 30px;
-            text-align: center;
-        }
-        
-        .contact-box h2 {
-            color: white;
-            margin-top: 0;
-        }
-        
-        .contact-box a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.2em;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #888;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 30px 20px;
-            }
-            
-            h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>🌟 Orbit Privacy Policy</h1>
-            <p>Last updated: January 03, 2026</p>
-        </div>
-        
-        <div class="content">
-            <p>Orbit ("we", "our", or "us") respects your privacy. This Privacy Policy explains how Orbit collects, uses, and protects your information when you use the app.</p>
-            
-            <div class="info-box">
-                <strong>🔒 Your Privacy Guarantee:</strong>
-                <p style="margin-bottom: 0;"><strong>ALL of your data is stored locally on your device only. We do NOT store any of your personal information, habits, fitness data, or images on our servers.</strong></p>
-            </div>
-            
-            <h2>Information We Collect</h2>
-            <p>Orbit collects only the minimum data required to provide its features.</p>
-            
-            <h3>a) Information You Provide</h3>
-            <ul>
-                <li>Habits, goals, routines, and progress data</li>
-                <li>Fitness and workout inputs</li>
-                <li>Food descriptions entered for calorie estimation</li>
-                <li>Optional photos uploaded for looks / self-improvement analysis</li>
-            </ul>
-            
-            <div class="highlight-box">
-                <strong>Important (Face Images):</strong>
-                <ul style="margin-left: 20px;">
-                    <li>Face images uploaded for looks analysis are processed <strong>locally on your device</strong></li>
-                    <li>Face images are <strong>NOT stored on our servers</strong></li>
-                    <li>Face images are <strong>NOT shared with any third party</strong></li>
-                    <li>Images are used only to generate on-device or temporary analysis results</li>
-                </ul>
-            </div>
-            
-            <h3>b) Automatically Collected Information</h3>
-            <ul>
-                <li>App usage data (feature usage, screen interactions, session count)</li>
-                <li>Device information (device type, OS version)</li>
-                <li>Crash logs and performance data (to improve stability)</li>
-            </ul>
-            <p>This data does not personally identify you.</p>
-            
-            <h2>How We Use Your Information</h2>
-            <p>Your information is used to:</p>
-            <ul>
-                <li>Provide core app functionality</li>
-                <li>Track habits, fitness, sleep, and nutrition progress</li>
-                <li>Estimate calories and generate AI-powered insights</li>
-                <li>Improve performance, reliability, and user experience</li>
-            </ul>
-            <p><strong>We do NOT sell, rent, or trade your data.</strong></p>
-            
-            <h2>AI & Third-Party Services</h2>
-            <p>Orbit uses limited third-party services to power specific features:</p>
-            
-            <h3>AI Services</h3>
-            <ul>
-                <li><strong>OpenAI API</strong>
-                    <ul>
-                        <li>Used for calorie estimation and self-improvement insights</li>
-                        <li>Only the necessary input (text or image) is sent temporarily for processing</li>
-                        <li>Responses are received and stored locally on your device</li>
-                        <li>We do not store any AI inputs or outputs on our servers</li>
-                        <li>We do not use AI inputs for advertising</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <h3>Analytics & Crash Reporting</h3>
-            <ul>
-                <li>Used only to understand app usage and fix bugs</li>
-                <li>No personal identity data is shared</li>
-            </ul>
-            <p>Each third-party service processes data according to its own privacy policy.</p>
-            
-            <h2>Data Storage</h2>
-            <div class="highlight-box">
-                <strong>100% Local Storage:</strong>
-                <ul style="margin-left: 20px;">
-                    <li><strong>ALL user data is stored locally on your device only</strong></li>
-                    <li><strong>NO data is stored on our servers</strong></li>
-                    <li>Your habits, goals, fitness data, and progress never leave your device</li>
-                    <li>Face images are processed and stored locally only</li>
-                    <li>You have complete control over your data</li>
-                </ul>
-            </div>
-            
-            <h2>Permissions</h2>
-            <p>Orbit may request the following permissions:</p>
-            <ul>
-                <li><strong>Camera</strong> (optional) – for looks/self-improvement analysis</li>
-                <li><strong>Storage</strong> – for app data and cached content</li>
-                <li><strong>Notifications</strong> – for reminders and habit tracking</li>
-            </ul>
-            <p>All permissions are used only for their intended purpose and can be disabled anytime.</p>
-            
-            <h2>Your Choices</h2>
-            <p>You can:</p>
-            <ul>
-                <li>Use most features without creating an account</li>
-                <li>Control or revoke permissions via device settings</li>
-                <li>Stop using the app to end all data collection</li>
-            </ul>
-            
-            <h2>Children's Privacy</h2>
-            <p>Orbit is not intended for children under 13. We do not knowingly collect data from children.</p>
-            
-            <h2>Data Security</h2>
-            <p>We take reasonable technical and organizational measures to protect your data. However, no method of storage or transmission is 100% secure.</p>
-            
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
-            
-            <div class="contact-box">
-                <h2>Contact Us</h2>
-                <p>If you have questions about this Privacy Policy, contact us at:</p>
-                <p style="margin-top: 15px;">📧 <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a></p>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p>© 2026 Orbit. All rights reserved.</p>
-        </div>
-    </div>
-</body>
-</html>
+Privacy Policy for Orbit
+
+Last updated: 03/01/2026
+
+Orbit (“we”, “our”, or “us”) respects your privacy. This Privacy Policy explains how Orbit collects, uses, and protects your information when you use the app.
+
+Information We Collect
+
+Orbit collects only the minimum data required to provide its features.
+
+a) Information You Provide
+
+Habits, goals, routines, and progress data
+
+Fitness and workout inputs
+
+Food descriptions entered for calorie estimation
+
+Optional photos uploaded for looks / self-improvement analysis
+
+Important (Face Images):
+
+Face images uploaded for looks analysis are processed locally on your device
+
+Face images are NOT stored on our servers
+
+Face images are NOT shared with any third party
+
+Images are used only to generate on-device or temporary analysis results
+
+b) Automatically Collected Information
+
+App usage data (feature usage, screen interactions, session count)
+
+Device information (device type, OS version)
+
+Crash logs and performance data (to improve stability)
+
+This data does not personally identify you.
+
+How We Use Your Information
+
+Your information is used to:
+
+Provide core app functionality
+
+Track habits, fitness, sleep, and nutrition progress
+
+Estimate calories and generate AI-powered insights
+
+Improve performance, reliability, and user experience
+
+We do NOT sell, rent, or trade your data.
+
+AI & Third-Party Services
+
+Orbit uses limited third-party services to power specific features:
+
+AI Services
+
+OpenAI API
+
+Used for calorie estimation and self-improvement insights
+
+Text or image inputs are processed securely
+
+We do not use AI inputs for advertising
+
+We do not store AI inputs longer than necessary
+
+Analytics & Crash Reporting
+
+Used only to understand app usage and fix bugs
+
+No personal identity data is shared
+
+Each third-party service processes data according to its own privacy policy.
+
+Data Storage
+
+Most user data is stored locally on your device
+
+Some data may be temporarily processed on secure servers to deliver AI features
+
+We do not intentionally store personal data longer than required for functionality
+
+Face images are never stored on our servers
+
+Permissions
+
+Orbit may request the following permissions:
+
+Camera (optional) – for looks/self-improvement analysis
+
+Storage – for app data and cached content
+
+Notifications – for reminders and habit tracking
+
+All permissions are used only for their intended purpose and can be disabled anytime.
+
+Your Choices
+
+You can:
+
+Use most features without creating an account
+
+Control or revoke permissions via device settings
+
+Stop using the app to end all data collection
+
+Children’s Privacy
+
+Orbit is not intended for children under 13.
+We do not knowingly collect data from children.
+
+Data Security
+
+We take reasonable technical and organizational measures to protect your data.
+However, no method of storage or transmission is 100% secure.
+
+Changes to This Policy
+
+We may update this Privacy Policy from time to time.
+Any changes will be reflected on this page with an updated date.
+
+Contact Us
+
+If you have questions about this Privacy Policy, contact us at:
+
+📧 profilesleetcode@gmail.com
