@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support – Football IQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #00e676;
+      --dark: #0a0f0d;
+      --card: #111a14;
+      --border: #1e2e22;
+      --text: #c8d8cc;
+      --muted: #6b8070;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 2rem 2rem;
+      display: flex;
+      align-items: flex-end;
+      gap: 1.2rem;
+    }
+
+    .logo-mark {
+      width: 48px;
+      height: 48px;
+      background: var(--green);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .logo-mark svg { width: 26px; height: 26px; }
+
+    .header-text h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+
+    .header-text p {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--border);
+      color: var(--green);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .contact-box {
+      background: #001a0a;
+      border: 1px solid var(--green);
+      border-radius: 10px;
+      padding: 1.6rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .contact-box strong {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-box a {
+      color: var(--green);
+      font-weight: 500;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    .contact-box p {
+      color: var(--text);
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0;
+    }
+
+    section {
+      margin-bottom: 2.8rem;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.35rem;
+      letter-spacing: 1.5px;
+      color: #fff;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 0.8rem; font-size: 0.95rem; }
+    p:last-child { margin-bottom: 0; }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* FAQ accordion */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      background: var(--card);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 1rem 1.2rem;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover { color: var(--green); }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border: 1.5px solid var(--muted);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      transition: border-color 0.2s, transform 0.3s;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .faq-item.open .faq-icon {
+      border-color: var(--green);
+      color: var(--green);
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.2s;
+      padding: 0 1.2rem;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 1.2rem 1rem;
+    }
+
+    /* Tips grid */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .tip-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+    }
+
+    .tip-card .tip-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .tip-card p {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--green); }
+
+    @media (max-width: 500px) {
+      header { padding: 1.5rem 1.2rem 1.2rem; }
+      main { padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#0a0f0d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 2a10 10 0 0 1 6.5 17.5M5.5 4.5l3 5-2 5 5 2 3-4.5"/>
+    </svg>
+  </div>
+  <div class="header-text">
+    <div class="badge">Support</div>
+    <h1>Help Centre</h1>
+    <p>Football IQ – Mental Performance Training App &nbsp;·&nbsp; We're here to help</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro">
+    Got a question or running into an issue? Browse the FAQs below or reach out directly — we aim to respond within <strong>5 business days</strong>.
+  </div>
+
+  <div class="contact-box">
+    <strong>Contact Support</strong>
+    <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a>
+    <p>Response time: within 5 business days</p>
+  </div>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How do I get started with Football IQ?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Download the app and open it — no sign-up, no account, no email required. You can begin training immediately. Simply choose a drill from the home screen and start building your football IQ.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Does the app require an internet connection?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        No. All core training features work fully offline. You can run drills, track your progress, and review your scores without any internet connection. Football IQ is built to train anywhere — on the pitch, in the locker room, or on the road.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Where is my progress and data stored?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Everything — your IQ scores, drill history, training streaks, and preferences — is stored locally on your device. Nothing is ever sent to a server. Your data belongs entirely to you.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        I uninstalled the app and lost my progress. Can it be recovered?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Unfortunately, no. Because all data is stored locally on your device and never backed up to a server, uninstalling the app permanently removes your training history. We recommend keeping the app installed if you want to preserve your progress.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        The app is crashing or not loading correctly. What should I do?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Try closing the app fully and reopening it. If the issue persists, restart your device. Make sure you're running the latest version of Football IQ from the App Store or Google Play. If the problem continues, contact us at <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a> with your device model and OS version.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Is Football IQ suitable for young players?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. Because Football IQ collects absolutely no personal data, it is safe for players of all ages, including those under 13. There are no accounts, no ads, and no data to share.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How is my IQ score calculated?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Your Football IQ score is based on your decision speed, accuracy, and consistency across drills. Each drill category contributes to a composite score. The more you train, the more refined your score becomes. Check the in-app guide for a full breakdown.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How do I request a new feature or provide feedback?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        We'd love to hear from you. Send your ideas or feedback to <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a> with the subject line "Feature Request". We read every message.
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Tips -->
+  <section>
+    <h2>Tips for Best Results</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-num">01</div>
+        <p>Train daily for short sessions — 10 minutes of focused drills beats an hour of passive watching.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-num">02</div>
+        <p>Start on easier difficulty and increase the level once you're consistently scoring above 80%.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-num">03</div>
+        <p>Use the app before training sessions to prime your decision-making for the pitch.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-num">04</div>
+        <p>Review your weakest drill categories and focus extra sessions on those areas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section>
+    <h2>Still Need Help?</h2>
+    <p>If your question isn't covered above, reach out directly. Include as much detail as possible — your device model, OS version, and a description of the issue — so we can help you faster.</p>
+    <p>Email us at <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a>. We aim to respond within 5 business days.</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Football IQ. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    // Open clicked if it wasn't open
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
