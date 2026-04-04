@@ -85,29 +85,12 @@
       border-left: 3px solid var(--green);
       border-radius: 10px;
       padding: 1.4rem 1.6rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
       font-size: 0.95rem;
       color: var(--text);
     }
 
-    .highlight-box {
-      background: #001a0a;
-      border: 1px solid var(--green);
-      border-radius: 10px;
-      padding: 1.6rem 1.6rem;
-      margin-bottom: 3rem;
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    .highlight-box strong {
-      display: block;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      letter-spacing: 2px;
-      color: var(--green);
-      margin-bottom: 0.5rem;
-    }
+    .intro strong { color: #fff; font-weight: 500; }
 
     section {
       margin-bottom: 2.8rem;
@@ -118,7 +101,7 @@
       font-size: 1.35rem;
       letter-spacing: 1.5px;
       color: #fff;
-      margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
       gap: 0.6rem;
@@ -134,18 +117,140 @@
       flex-shrink: 0;
     }
 
-    p { margin-bottom: 0.8rem; font-size: 0.95rem; }
+    p {
+      margin-bottom: 0.85rem;
+      font-size: 0.95rem;
+    }
+
     p:last-child { margin-bottom: 0; }
 
     a { color: var(--green); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    .health-section {
+    /* Highlight card — used for the Ads & Analytics section */
+    .highlight-card {
+      background: #001a0a;
+      border: 1px solid var(--green);
+      border-radius: 10px;
+      padding: 1.5rem 1.6rem;
+      margin-top: 0.5rem;
+    }
+
+    .highlight-card p {
+      font-size: 0.93rem;
+    }
+
+    /* Data list — clean pill list */
+    .data-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin: 0.6rem 0 0.8rem;
+    }
+
+    .data-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      font-size: 0.93rem;
+      color: var(--text);
+    }
+
+    .data-list li::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 0.55rem;
+    }
+
+    /* Purpose tags */
+    .purpose-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.8rem 0;
+    }
+
+    .purpose-tag {
+      background: var(--border);
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* Info grid — two-col summary cards */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .info-card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-left: 3px solid var(--green);
       border-radius: 10px;
-      padding: 1.6rem 1.8rem;
+      padding: 1.1rem 1.2rem;
+    }
+
+    .info-card .info-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .info-card p {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin: 0;
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: #001a0a;
+      border: 1px solid var(--green);
+      border-radius: 10px;
+      padding: 1.6rem;
+      text-align: center;
+    }
+
+    .contact-box strong {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-box a {
+      color: var(--green);
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .contact-box p {
+      color: var(--text);
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
     }
 
     footer {
@@ -155,6 +260,9 @@
       color: var(--muted);
       font-size: 0.82rem;
     }
+
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--green); }
 
     @media (max-width: 500px) {
       header { padding: 1.5rem 1.2rem 1.2rem; }
@@ -174,73 +282,166 @@
   <div class="header-text">
     <div class="badge">Legal</div>
     <h1>Privacy Policy</h1>
-    <p>Football IQ – Mental Performance Training App &nbsp;·&nbsp; Effective: June 2025</p>
+    <p>Football IQ – Mental Performance Training App &nbsp;·&nbsp; Last updated: 1 July 2025</p>
   </div>
 </header>
 
 <main>
 
   <div class="intro">
-    Your privacy is fully protected. Football IQ is built on one simple principle — <strong>what happens on your phone, stays on your phone.</strong>
+    This Privacy Policy explains how <strong>Football IQ</strong> ("we", "our", or "us") handles your information when you use our mobile application. We are committed to being transparent about our data practices. Please read this policy carefully.
   </div>
 
-  <div class="highlight-box">
-    <strong>We Collect Zero Data</strong>
-    Football IQ does not collect, store, transmit, or share any personal information. No accounts. No sign-ups. No servers. Everything lives only on your device.
-  </div>
-
+  <!-- At a glance -->
   <section>
-    <h2>Who We Are</h2>
-    <p>Football IQ is a mobile application that trains football decision-making and tactical intelligence. For any questions about this policy, contact us at <a href="mailto:privacy@footballiq.app">privacy@footballiq.app</a>.</p>
+    <h2>At a Glance</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">Personal Data Collected</div>
+        <p>No personal information (name, email, account) is collected or required to use the app.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-label">Data Storage</div>
+        <p>All training progress and scores are stored locally on your device only.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-label">Data Sales</div>
+        <p>We do not sell your personal data to any third party, ever.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-label">Advertising</div>
+        <p>We use third-party tools to measure ad performance. You can opt out via device settings.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Information we collect -->
   <section>
-    <h2>No Account, No Sign-Up</h2>
-    <p>Football IQ requires no registration, login, email address, or personal details of any kind. You download the app and start training immediately. We have no way to identify who you are — and we don't want to.</p>
+    <h2>Information We Collect</h2>
+
+    <p><strong style="color:#fff;font-weight:500;">Information you provide directly</strong></p>
+    <p>Football IQ does not require you to create an account, provide a name, or supply an email address. You can use all core features of the app without providing any personal information.</p>
+
+    <p><strong style="color:#fff;font-weight:500;">Automatically collected information</strong></p>
+    <p>When you use the app, certain technical and usage data may be collected automatically by third-party services we use for analytics and advertising purposes. This may include:</p>
+    <ul class="data-list">
+      <li>Device identifiers, including advertising IDs (such as IDFA on iOS or GAID on Android)</li>
+      <li>App interaction data (e.g. screens viewed, features used, session duration)</li>
+      <li>Device type, operating system version, and general locale</li>
+      <li>Aggregated performance and crash data</li>
+    </ul>
+
+    <p>This information does not identify you by name, and we do not link it to any personal account.</p>
   </section>
 
+  <!-- Advertising & Analytics — highlighted section -->
   <section>
-    <h2>All Data Stays On Your Device</h2>
-    <p>Everything the app generates — your IQ scores, drill results, progress, training history, and preferences — is stored exclusively in your phone's local storage. This data never leaves your device. We have no access to it, and it is never transmitted to us or any third party.</p>
-    <p>If you uninstall the app, all of this data is permanently removed from your device.</p>
+    <h2>Advertising &amp; Analytics</h2>
+
+    <div class="highlight-card">
+      <p>We use third-party services, including <strong style="color:#fff;font-weight:500;">Meta (Facebook)</strong>, to analyse app usage and measure the effectiveness of our advertising campaigns.</p>
+
+      <p style="margin-top:0.8rem;">These services may collect information such as device identifiers (including advertising IDs) and interaction data within the app. This data is used for:</p>
+
+      <div class="purpose-tags">
+        <span class="purpose-tag">Analytics</span>
+        <span class="purpose-tag">Ad Performance Measurement</span>
+        <span class="purpose-tag">Campaign Optimisation</span>
+      </div>
+
+      <ul class="data-list">
+        <li><strong style="color:#fff;font-weight:500;">Analytics</strong> — understanding how users interact with the app, identifying areas for improvement, and monitoring overall app performance.</li>
+        <li><strong style="color:#fff;font-weight:500;">Advertising and marketing</strong> — measuring ad performance, attributing installs to campaigns, and improving the relevance of ads shown to potential users on Meta platforms.</li>
+      </ul>
+
+      <p style="margin-top:0.9rem;">We do <strong style="color:#fff;font-weight:500;">not</strong> sell your personal data to advertisers or any other third party.</p>
+
+      <p style="margin-top:0.8rem;"><strong style="color:#fff;font-weight:500;">Opting out:</strong> You can limit ad tracking or reset your advertising ID at any time through your device settings:</p>
+      <ul class="data-list">
+        <li><strong style="color:#fff;font-weight:500;">iOS:</strong> Settings → Privacy &amp; Security → Tracking → disable "Allow Apps to Request to Track"</li>
+        <li><strong style="color:#fff;font-weight:500;">Android:</strong> Settings → Privacy → Ads → opt out of ads personalisation or reset your advertising ID</li>
+      </ul>
+
+      <p style="margin-top:0.9rem;">For more information on how Meta uses data, please review Meta's <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+    </div>
   </section>
 
-  <section class="health-section">
-    <h2>Health and Fitness Data</h2>
-    <p>The app may process athletic performance information such as jump height measurements, shot power analysis results, and training performance metrics.</p>
-    <p>This information is used only to provide performance analysis features within the app.</p>
-    <p>All health and fitness related data is processed locally on the user's device and is never transmitted, collected, stored on servers, or shared with any third party.</p>
-  </section>
-
+  <!-- How we use information -->
   <section>
-    <h2>No Internet Required</h2>
-    <p>All core training features of Football IQ work fully offline. No data is sent or received during your sessions.</p>
+    <h2>How We Use Information</h2>
+    <p>The limited data we collect or receive from third-party services is used solely to:</p>
+    <ul class="data-list">
+      <li>Understand how the app is used so we can improve features and fix bugs</li>
+      <li>Measure the reach and effectiveness of our advertising campaigns</li>
+      <li>Ensure the app operates correctly across different devices and operating systems</li>
+    </ul>
+    <p>We do not use this data to build personal profiles, and we do not combine it with any personally identifiable information.</p>
   </section>
 
+  <!-- Local data storage -->
   <section>
-    <h2>No Third-Party Tracking</h2>
-    <p>We do not use any analytics tools, advertising SDKs, tracking pixels, or third-party services that collect user data. There are no ads in the app. Your behaviour inside the app is completely private.</p>
+    <h2>Local Data Storage</h2>
+    <p>All of your in-app training data — including your Football IQ scores, drill history, training streaks, and preferences — is stored entirely on your device. This data is never transmitted to our servers or any third party.</p>
+    <p>Because this data is device-local, it will be permanently deleted if you uninstall the app. We are unable to recover it for you. We recommend keeping the app installed if you wish to preserve your progress.</p>
   </section>
 
+  <hr class="divider"/>
+
+  <!-- Children -->
   <section>
     <h2>Children's Privacy</h2>
-    <p>Because we collect absolutely no data, Football IQ is safe for users of all ages including players under 13. There is nothing to collect, store, or share about any user, regardless of age.</p>
+    <p>Football IQ does not knowingly collect personal information from children under the age of 13 (or the applicable age of digital consent in your country). Because no account or personal information is required to use the app, it is designed to be safe for players of all ages.</p>
+    <p>If you are a parent or guardian and have concerns about your child's use of the app or the advertising measurement data described above, you can disable ad tracking on their device using the steps outlined in the Advertising &amp; Analytics section above.</p>
+    <p>If you believe a child has provided us with personal information in any way, please contact us at <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a> and we will take prompt steps to address it.</p>
   </section>
 
+  <!-- Third-party links -->
+  <section>
+    <h2>Third-Party Services &amp; Links</h2>
+    <p>The app may contain links to third-party websites or services. This Privacy Policy applies only to Football IQ. We have no control over, and accept no responsibility for, the privacy practices of any third-party services. We encourage you to review their privacy policies before interacting with them.</p>
+    <p>Third-party services currently used by Football IQ include:</p>
+    <ul class="data-list">
+      <li><strong style="color:#fff;font-weight:500;">Meta (Facebook)</strong> — analytics and advertising measurement. See <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta's Privacy Policy</a>.</li>
+    </ul>
+  </section>
+
+  <!-- Data retention -->
+  <section>
+    <h2>Data Retention</h2>
+    <p>Training data stored locally on your device is retained until you uninstall the app or clear its data manually.</p>
+    <p>Aggregated, non-identifiable analytics data collected by third-party services is retained according to their own data retention policies. We do not independently store this data on our own servers.</p>
+  </section>
+
+  <!-- Your rights -->
+  <section>
+    <h2>Your Rights</h2>
+    <p>Depending on your location, you may have rights under applicable privacy law, including the right to access, correct, or delete personal data held about you. Since Football IQ does not collect or store personal data on our own servers, there is generally nothing for us to provide, correct, or delete.</p>
+    <p>For data held by third-party services such as Meta, please contact those services directly or consult their privacy policies to exercise your rights.</p>
+    <p>If you have any privacy-related questions or requests, contact us at <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a>.</p>
+  </section>
+
+  <!-- Changes -->
   <section>
     <h2>Changes to This Policy</h2>
-    <p>If our data practices ever change, we will update this policy and notify users through the app before any changes take effect. The "Effective" date at the top always reflects the latest version.</p>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the app, our practices, or applicable law. When we make material changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+    <p>Continued use of Football IQ after any changes constitutes your acceptance of the updated policy.</p>
   </section>
 
+  <!-- Contact -->
   <section>
-    <h2>Contact</h2>
-    <p>Questions? Reach us at <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a>. We aim to respond within 5 business days.</p>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, concerns, or requests relating to this Privacy Policy or your data, please get in touch:</p>
+    <div class="contact-box" style="margin-top:1rem;">
+      <strong>Privacy Enquiries</strong>
+      <a href="mailto:profilesleetcode@gmail.com">profilesleetcode@gmail.com</a>
+      <p>We aim to respond within 5 business days.</p>
+    </div>
   </section>
 
 </main>
 
 <footer>
-  &copy; 2025 Football IQ. All rights reserved.
+  &copy; 2025 Football IQ. All rights reserved. &nbsp;·&nbsp; <a href="support.html">Help Centre</a>
 </footer>
 
 </body>
